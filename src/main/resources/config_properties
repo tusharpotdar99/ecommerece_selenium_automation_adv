@@ -11,6 +11,7 @@ implicit.wait = 0
 explicit.wait = 20
 page.load.timeout = 30
 
+
 # Execution
 headless = false
 
