@@ -1,5 +1,6 @@
 package Driver;
 
+import Enums.BrowserType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,22 +20,26 @@ public final class DriverFactory {
     }
 
     public static void initDriver(String browser) {
-        switch (browser.toLowerCase()) {
-            case "chrome":
 
+        BrowserType browserType = BrowserType.valueOf(browser.toUpperCase());
+
+        switch (browserType){
+                        //        switch (browser.toLowerCase()) {
+//            case "chrome":
+            case CHROME:
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--start-maximized");
                 driver.set(new ChromeDriver(chromeOptions));
                 break;
 
-            case "firefox":
+            case FIREFOX:
 
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 driver.set(new FirefoxDriver(firefoxOptions));
                 driver.get().manage().window().maximize();
                 break;
 
-            case "edge":
+            case EDGE:
 
                 EdgeOptions edgeOptions = new EdgeOptions();
                 driver.set(new EdgeDriver(edgeOptions));
