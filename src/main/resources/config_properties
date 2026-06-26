@@ -1,0 +1,8 @@
+url = https://tutorialsninja.com/demo/
+email = tusharpotdar99@gmail.com
+password = 9175303359
+
+invalidemail = something@gmail.com
+invalidpassword = something123
+
+off_url = http://localhost/opencart/
