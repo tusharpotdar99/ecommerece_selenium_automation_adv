@@ -23,6 +23,10 @@ public class HeaderComponent extends BasePage {
     private final By searchButton = By.xpath("//i[@class='fa-solid fa-magnifying-glass']");
     private final By cartTotal = By.xpath("//span[@id='cart-total']");
 
+    private final By qafoxHeading = By.xpath("//a[normalize-space()='Qafox.com']");
+    private final By qaloginMenu = By.xpath("//ul//a[normalize-space()='Login']");
+    private final By qasearchButton = By.xpath("//button[@class='btn btn-default btn-lg']");
+
     public void searchProduct(String product) {
         actions.type(searchBox, product);
         actions.click(searchButton);
@@ -64,6 +68,12 @@ public class HeaderComponent extends BasePage {
 
     public boolean isMyAccoutDisplayed(){
         return actions.isDisplayed(myAccount);
+    }
+
+
+    //for online wesite
+    public boolean isPageTitleDisplayed(){
+        return actions.isDisplayed(qafoxHeading);
     }
 
 }

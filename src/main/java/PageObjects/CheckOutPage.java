@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,241 +10,53 @@ import org.openqa.selenium.support.ui.Select;
 public class CheckOutPage extends BasePage {
 
     public CheckOutPage(WebDriver driver){super(driver);}
-    @FindBy(xpath = "//ul[@class='breadcrumb']")
-    WebElement breadcrumb;
 
-    @FindBy(xpath = "//a[contains(text(),'Checkout')]")
-    WebElement breadcrumbCheckout;
 
-    @FindBy(xpath = "//input[@id='input-shipping-existing']")
-    WebElement radioExistingAddress;
+    private final By radioExistingAddress =  By.xpath("//input[@id='input-shipping-existing']");
+    private final By radioNewAddress = By.xpath("//input[@id='input-shipping-new']");
+    private  final By labelCheckout = By.xpath("//div[@id='content']//h1");
+    private final By labelShippingAddress = By.xpath("//div[@id='checkout-shipping-address']//legend");
+    private final  By textFirstName = By.xpath("//input[@id='input-shipping-firstname']");
+    private final By textLastName = By.xpath( "//input[@id='input-shipping-lastname']");
+    private final By textCompany = By.xpath("//input[@id='input-shipping-company']");
+    private final By textAddress1 = By.xpath("(//input[contains(@id,'input-shipping-address')])[1]");
+    private final By textAddress2 = By.xpath("(//input[contains(@id,'input-shipping-address')])[2]");
+    private final By textCity = By.xpath("//input[@id='input-shipping-city']");
+    private final By textPostCode = By.xpath("//input[@id='input-shipping-postcode']");
+    private final By selectDrpdwnCountry = By.xpath("//select[@id='input-shipping-country']");
+    private final By selectDrpdwnState = By.xpath("//select[@id='input-shipping-zone']");
+    private final By buttonContinueAddress  = By.xpath("//button[@id='button-shipping-address']");
+    private final By labelShippingMethod  = By.xpath("//legend[normalize-space()='Shipping Method']");
+    private final By labelPaymentMethod = By.xpath( "//legend[normalize-space()='Payment Method']");
+    private final By buttonShippingMethods  = By.xpath("//button[@id='button-shipping-methods']");
+    private final By optionShippingRate  = By.xpath("//input[@id='input-shipping-method-flat-flat']");
+    private final By buttonContinueShippingMethod = By.xpath( "//button[@id='button-shipping-method']");
+    private final By buttonPaymentMethod  = By.xpath("//button[@id='button-payment-methods']");
+    private final By optionCashonDelivery  = By.xpath("//input[@id='input-payment-method-cod-cod']");
+    private final By buttonContinuePaymentMethod  = By.xpath( "//button[@id='button-payment-method']q");
+    private final By textCommetOrder = By.xpath("//textarea[@id='input-comment']");
+    private final By labelProductBrandCheckout = By.xpath("(//div[@id='checkout-confirm']//table//td[1])[1]");
+    private final By labelOrderPrice  = By.xpath("(//div[@id='checkout-confirm']//table//td[2])[1]");
+    private final By labelOrderSubTotalPrice = By.xpath("(//div[@id='checkout-confirm']//table//td[2])[2]");
+    private final By labelEcoTaxOrder = By.xpath("(//div[@id='checkout-confirm']//table//td[2])[3]");
+    private final By labelVatPrice = By.xpath("(//div[@id='checkout-confirm']//table//td[2])[4]");
+    private final By labelFinalOrderPrice = By.xpath("(//div[@id='checkout-confirm']//table//td[2])[5]");
+    private final By buttonConfirmOrder = By.xpath("//div[@id='checkout-payment']//button");
 
-    @FindBy(xpath = "//input[@id='input-shipping-new']")
-    WebElement radioNewAddress;
-
-    @FindBy(xpath = "//div[@id='content']//h1")
-    WebElement labelCheckout;
-
-    @FindBy(xpath = "//div[@id='checkout-shipping-address']//legend")
-    WebElement labelShippingAddress;
-
-    @FindBy(xpath = "//input[@id='input-shipping-firstname']")
-    WebElement textFirstName;
-
-    @FindBy(xpath = "//input[@id='input-shipping-lastname']")
-    WebElement textLastName;
-
-    @FindBy(xpath = "//input[@id='input-shipping-company']")
-    WebElement textCompany;
-
-    @FindBy(xpath = "(//input[contains(@id,'input-shipping-address')])[1]")
-    WebElement textAddress1;
-
-    @FindBy(xpath = "(//input[contains(@id,'input-shipping-address')])[2]")
-    WebElement textAddress2;
-
-    @FindBy(xpath = "//input[@id='input-shipping-city']")
-    WebElement textCity;
-
-    @FindBy(xpath = "//input[@id='input-shipping-postcode']")
-    WebElement textPostCode;
-
-    @FindBy(xpath = "//select[@id='input-shipping-country']")
-    WebElement selectDrpdwnCountry;
-
-    @FindBy(xpath = "//select[@id='input-shipping-zone']")
-    WebElement selectDrpdwnState;
-
-    @FindBy(xpath = "//button[@id='button-shipping-address']")
-    WebElement buttonContinueAddress;
-
-    @FindBy(xpath = "//legend[normalize-space()='Shipping Method']")
-    WebElement labelShippingMethod;
-
-    @FindBy(xpath = "//legend[normalize-space()='Payment Method']")
-    WebElement labelPaymentMethod;
-
-    @FindBy(xpath = "//button[@id='button-shipping-methods']")
-    WebElement buttonShippingMethods;
-
-    @FindBy(xpath = "//input[@id='input-shipping-method-flat-flat']")
-    WebElement optionShippingRate;
-
-    @FindBy(xpath = "//button[@id='button-shipping-method']")
-    WebElement buttonContinueShippingMethod;
-
-    @FindBy(xpath = "//button[@id='button-payment-methods']")
-    WebElement buttonPaymentMethod;
-
-    @FindBy(xpath = "//input[@id='input-payment-method-cod-cod']")
-    WebElement optionCashonDelivery;
-
-    @FindBy(xpath = "//button[@id='button-payment-method']q")
-    WebElement buttonContinuePaymentMethod;
-
-    @FindBy(xpath = "//textarea[@id='input-comment']")
-    WebElement textCommetOrder;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[1])[1]")
-    WebElement labelProductBrandCheckout;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[2])[1]")
-    WebElement labelOrderPrice;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[2])[2]")
-    WebElement labelOrderSubTotalPrice;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[2])[3]")
-    WebElement labelEcoTaxOrder;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[2])[4]")
-    WebElement labelVatPrice;
-
-    @FindBy(xpath = "(//div[@id='checkout-confirm']//table//td[2])[5]")
-    WebElement labelFinalOrderPrice;
-
-    @FindBy(xpath = "//div[@id='checkout-payment']//button")
-    WebElement buttonConfirmOrder;
 
     public boolean isCheckoutPageDisplayed(){
-        return labelCheckout.isDisplayed();
-    }
-
-    public String getBreadcrumbText(){
-        return breadcrumb.getText();
+        return actions.isDisplayed(labelCheckout);
     }
 
     public String getCheckoutHeading(){
-        return labelCheckout.getText();
+        return actions.getText(labelCheckout);
     }
+    public String getShippingAddressLabel(){ return actions.getText(labelShippingAddress);}
+    public void selectExistingAddress(){ actions.click(radioExistingAddress); }
+    public void selectNewAddress(){  actions.click(radioNewAddress); }
 
-    public String getShippingAddressLabel(){
-        return labelShippingAddress.getText();
-    }
 
-    public void selectExistingAddress(){
-        radioExistingAddress.click();
-    }
-
-    public void selectNewAddress(){
-        radioNewAddress.click();
-    }
-
-    public void enterFirstName(String firstName){
-        textFirstName.clear();
-        textFirstName.sendKeys(firstName);
-    }
-
-    public void enterLastName(String lastName){
-        textLastName.clear();
-        textLastName.sendKeys(lastName);
-    }
-
-    public void enterCompany(String company){
-        textCompany.clear();
-        textCompany.sendKeys(company);
-    }
-
-    public void enterAddress1(String address1){
-        textAddress1.clear();
-        textAddress1.sendKeys(address1);
-    }
-
-    public void enterAddress2(String address2){
-        textAddress2.clear();
-        textAddress2.sendKeys(address2);
-    }
-
-    public void enterCity(String city){
-        textCity.clear();
-        textCity.sendKeys(city);
-    }
-
-    public void enterPostCode(String postCode){
-        textPostCode.clear();
-        textPostCode.sendKeys(postCode);
-    }
-
-    public void selectCountry(String country){
-        Select select = new Select(selectDrpdwnCountry);
-        select.selectByVisibleText(country);
-    }
-
-    public void selectState(String state){
-        Select select = new Select(selectDrpdwnState);
-        select.selectByVisibleText(state);
-    }
-
-    public void clickContinueAddress(){
-        buttonContinueAddress.click();
-    }
-
-    public void enterShippingAddress(
-            String firstName,
-            String lastName,
-            String company,
-            String address1,
-            String address2,
-            String city,
-            String postCode,
-            String country,
-            String state){
-
-        selectNewAddress();
-        enterFirstName(firstName);
-        enterLastName(lastName);
-        enterCompany(company);
-        enterAddress1(address1);
-        enterAddress2(address2);
-        enterCity(city);
-        enterPostCode(postCode);
-        selectCountry(country);
-        selectState(state);
-        clickContinueAddress();
-    }
-
-    public void clickShippingMethods(){
-        buttonShippingMethods.click();
-    }
-
-    public void clickPaymentMethods(){
-        buttonPaymentMethod.click();
-    }
-
-    public void enterOrderComment(String comment){
-        textCommetOrder.clear();
-        textCommetOrder.sendKeys(comment);
-    }
-
-    public String getProductBrand(){
-        return labelProductBrandCheckout.getText();
-    }
-
-    public String getOrderPrice(){
-        return labelOrderPrice.getText();
-    }
-
-    public String getSubTotalPrice(){
-        return labelOrderSubTotalPrice.getText();
-    }
-
-    public String getEcoTax(){
-        return labelEcoTaxOrder.getText();
-    }
-
-    public String getVatPrice(){
-        return labelVatPrice.getText();
-    }
-
-    public String getFinalOrderPrice(){
-        return labelFinalOrderPrice.getText();
-    }
-
-    public void clickConfirmOrder(){
-        buttonConfirmOrder.click();
-    }
-
-    public void completeCheckout(
+    public void checkout(
             String firstName,
             String lastName,
             String company,
@@ -255,24 +68,32 @@ public class CheckOutPage extends BasePage {
             String state,
             String comment){
 
-        enterShippingAddress(
-                firstName,
-                lastName,
-                company,
-                address1,
-                address2,
-                city,
-                postCode,
-                country,
-                state);
-
-        clickShippingMethods();
-        clickPaymentMethods();
-        enterOrderComment(comment);
-        clickConfirmOrder();
+        selectNewAddress();
+        actions.type(textFirstName, firstName);
+        actions.type(textLastName,lastName);
+        actions.type(textCompany,company);
+        actions.type(textAddress1, address1);
+        actions.type(textAddress2,address2);
+        actions.type(textCity,city);
+        actions.type(textPostCode,postCode);
+        actions.selectByVisibleText(selectDrpdwnCountry,country);
+        actions.selectByVisibleText(selectDrpdwnState,state);
+        actions.click(buttonContinueAddress);
+        actions.click(buttonShippingMethods);
+        actions.click(buttonPaymentMethod);
+        actions.type(textCommetOrder, comment);
+        actions.click(buttonConfirmOrder);
     }
 
+    public void productsInCartInfo(){
+        String productName = actions.getText(labelProductBrandCheckout);
+        String orderPrice = actions.getText(labelOrderPrice);
+        String subTotalPrice = actions.getText(labelOrderSubTotalPrice);
+        String EcoTaxPrice = actions.getText(labelEcoTaxOrder);
+        String vatPrice = actions.getText(labelVatPrice);
+        String finalOrderPrice = actions.getText(labelFinalOrderPrice);
 
+    }
 
 
 

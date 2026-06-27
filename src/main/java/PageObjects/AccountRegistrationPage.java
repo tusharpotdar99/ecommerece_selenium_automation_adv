@@ -17,6 +17,7 @@ public class AccountRegistrationPage extends BasePage {
     private final By registerPageHeading = By.xpath("//h1[normalize-space()='Register Account']");
     private final By personalDetailsTitle = By.xpath("//legend[normalize-space()='Your Personal Details']");
     private final By redirectedToLogin = By.xpath("//a[normalize-space()='login page']");
+
     private final By firstNameTextBox = By.xpath("//input[@id='input-firstname']");
     private final By lastNameTextBox = By.xpath("//input[@id='input-lastname']");
     private final By emailTextbox = By.xpath("//input[@id='input-email']");
@@ -25,6 +26,12 @@ public class AccountRegistrationPage extends BasePage {
     private final By privacyPolicyCheck = By.xpath("//input[@type ='checkbox' and @name = 'agree']");
 
     private final By continueButton = By.xpath("//button[normalize-space()='Continue']");
+
+    private final By qapasswordConfirmTextBox = By.xpath("//input[@id='input-confirm']");
+    private final By qacontinueButton = By.xpath("//input[@value='Continue']");
+
+    private final By subscribeYesRadio = By.xpath("//input[@type='radio' and @name='newsletter' and @value='1']");
+    private final By subscribeNoRadio = By.xpath("//input[@type='radio' and @name='newsletter' and @value='0']");
 
     public boolean isDisplayedRegHeading(){
         return actions.isDisplayed(registerPageHeading);

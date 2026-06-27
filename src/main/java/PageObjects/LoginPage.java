@@ -17,22 +17,35 @@ public class LoginPage extends BasePage {
         super(driver);
         sidePanel = new AccountSidePanelComponent(driver);
     }
-    private final By breadcrumb = By.xpath("//ul[@class='breadcrumb']");
-    private final By breadcrumbLogin =  By.xpath("//ul[@class='breadcrumb']//a[normalize-space()='Login']");
     private final By txtNewCustomer = By.xpath("//h2[normalize-space()='New Customer']");
-    private final By btnContinue = By.xpath( "//a[normalize-space()='Continue']");
-    private final By txtReturningCustomer = By.xpath("//h2[normalize-space()='Returning Customer']");
+    private final By loginButton = By.xpath("//button[normalize-space()='Login']");
+    private final By qaloginButton = By.xpath("//input[@value='Login']");
+
+
+    //same for both webs
     private final By emailTextBox = By.xpath("//input[@id='input-email']");
     private final By passwordTextBox = By.xpath("//input[@id='input-password']");
+    private final By btnContinue = By.xpath( "//a[normalize-space()='Continue']");
     private final By buttonForgottenPassword = By.xpath("//form//a[normalize-space()='Forgotten Password']");
-    private final By loginButton = By.xpath("//button[normalize-space()='Login']");
+    private final By txtReturningCustomer = By.xpath("//h2[normalize-space()='Returning Customer']");
     private final By warningMessage = By.xpath("//div[contains(@class,'alert-danger')]");
+
 
     public MyAccountPage login(String email, String password){
 
         actions.type(emailTextBox, email);
         actions.type(passwordTextBox, password);
         actions.click(loginButton);
+
+        return new MyAccountPage(driver);
+
+    }
+
+    public MyAccountPage qalogin(String email, String password){
+
+        actions.type(emailTextBox, email);
+        actions.type(passwordTextBox, password);
+        actions.click(qaloginButton);
 
         return new MyAccountPage(driver);
 
@@ -52,6 +65,19 @@ public class LoginPage extends BasePage {
         return this;
     }
 
+    public LoginPage qaloginWithInvalidCredentials(
+            String email,
+            String password) {
+
+        actions.type(emailTextBox, email);
+
+        actions.type(passwordTextBox, password);
+
+        actions.click(qaloginButton);
+
+        return this;
+    }
+
     public AccountSidePanelComponent sidePanel(){
         return sidePanel;
     }
@@ -61,12 +87,12 @@ public class LoginPage extends BasePage {
         return actions.getText(warningMessage);
     }
 
-//    public RegisterPage clickContinue() {
-//
-//        actions.click(continueButton);
-//
-//        return new RegisterPage(driver);
-//    }
+    public AccountRegistrationPage clickContinue() {
+
+        actions.click(btnContinue);
+
+        return new AccountRegistrationPage(driver);
+    }
 
 
 //    public ForgotPasswordPage clickForgotPassword() {

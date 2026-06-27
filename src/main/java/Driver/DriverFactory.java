@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import utilities.ConfigReader;
+
 import java.time.Duration;
 
 public final class DriverFactory {
@@ -34,6 +36,13 @@ public final class DriverFactory {
                 logger.info("Launching Chrome browser....");
 
                 ChromeOptions chromeOptions = new ChromeOptions();
+                if (ConfigReader.isHeadless()) {
+                    chromeOptions.addArguments("--headless=new");
+                }
+                chromeOptions.addArguments("--window-size=1920,1080");
+                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--disable-gpu");
                 chromeOptions.addArguments("--start-maximized");
                 driver.set(new ChromeDriver(chromeOptions));
                 break;

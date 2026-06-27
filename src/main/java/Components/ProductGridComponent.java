@@ -15,6 +15,7 @@ public class ProductGridComponent extends BasePage {
 
     private final By productTitles = By.xpath("//div[@class='product-thumb']//h4");
 
+    private final By qaproductTitles = By.xpath("//div[contains(@class,'product-thumb')]//h4//a");
     public int getProductCount() {
         return actions.getElementCount(productTitles);
     }
