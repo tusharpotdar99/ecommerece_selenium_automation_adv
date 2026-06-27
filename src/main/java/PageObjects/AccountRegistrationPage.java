@@ -1,10 +1,10 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 import java.util.List;
 
 public class AccountRegistrationPage extends BasePage {
@@ -14,143 +14,86 @@ public class AccountRegistrationPage extends BasePage {
         super(driver);
     }
 
-    @FindBy(xpath = "//ul[@class='breadcrumb']")
-    WebElement breadcrumb;
+    private final By registerPageHeading = By.xpath("//h1[normalize-space()='Register Account']");
+    private final By personalDetailsTitle = By.xpath("//legend[normalize-space()='Your Personal Details']");
+    private final By redirectedToLogin = By.xpath("//a[normalize-space()='login page']");
+    private final By firstNameTextBox = By.xpath("//input[@id='input-firstname']");
+    private final By lastNameTextBox = By.xpath("//input[@id='input-lastname']");
+    private final By emailTextbox = By.xpath("//input[@id='input-email']");
+    private final By passwordTextBox = By.xpath("//input[@id='input-password']");
+    private final By newsletterCheckbox = By.xpath("//input[@type ='checkbox' and @id = 'input-newsletter']");
+    private final By privacyPolicyCheck = By.xpath("//input[@type ='checkbox' and @name = 'agree']");
 
-    @FindBy(xpath = "//a[normalize-space()='Register']")
-    WebElement breadcrumbRegister;
+    private final By continueButton = By.xpath("//button[normalize-space()='Continue']");
 
-    @FindBy(xpath = "//h1[normalize-space()='Register Account']")
-    WebElement txtRegisterAccount;
-
-    @FindBy(xpath = "//input[@id='input-firstname']")
-    WebElement textFirstName;
-
-    @FindBy(xpath = "//input[@id='input-lastname']")
-    WebElement textLastName;
-
-    @FindBy(xpath = "//input[@id='input-email']")
-    WebElement textEmail;
-
-    @FindBy(xpath = "//input[@id='input-telephone']")
-    WebElement textTelephone;
-
-    @FindBy(xpath = "//input[@id='input-password']")
-    WebElement textPassword;
-
-    @FindBy(xpath = "//input[@id='input-confirm']")
-    WebElement textConfirmPassword;
-
-    @FindBy(xpath = "//input[@value='1'][@name='newsletter']")
-    WebElement radioNewsletterYes;
-
-    @FindBy(xpath = "//input[@value='0'][@name='newsletter']")
-    WebElement radioNewsletterNo;
-
-    @FindBy(xpath = "//label[normalize-space()='Yes']")
-    WebElement radioBoxSubscribe;
-
-    @FindBy(xpath = "//label[normalize-space()='No']")
-    WebElement radioBoxUnSubscribe;
-
-    @FindBy(xpath = "//input[@name='agree']")
-    WebElement checkboxPolicy;
-
-    @FindBy(xpath = "//input[@value='Continue']")
-    WebElement btnContinue;
-
-    @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
-    WebElement textsuccessMessageConfirmation;
-
-    @FindBy(xpath = "//a[normalize-space()='Continue']")
-    WebElement btnContinueAfterRegister;
-
-    @FindBy(xpath = "//a[normalize-space()='contact us']")
-    WebElement linkContactUsOnSuccess;
-
-    @FindBy(xpath = "//aside//a")
-    List<WebElement> sidePanelLinks;
-
-    @FindBy(xpath = "//div[contains(@class,'alert-danger')]")
-    WebElement warningMessage;
-
-
-    public void setFirstName(String firstName){
-        textFirstName.sendKeys(firstName);
+    public boolean isDisplayedRegHeading(){
+        return actions.isDisplayed(registerPageHeading);
     }
 
-    public void setLastName(String lastName){
-        textLastName.sendKeys(lastName);
+    public String getPageHeading(){
+        return actions.getText(registerPageHeading);
     }
 
-    public void setEmail(String email){
-        textEmail.sendKeys(email);
+    public void enterFirstName(String value) {
+        actions.type(firstNameTextBox, value);
     }
 
-    public void setTelephone(String telephone){
-        textTelephone.sendKeys(telephone);
+    public void enterLastName(String value) {
+        actions.type(lastNameTextBox, value);
     }
 
-    public void setPassword(String password){
-        textPassword.sendKeys(password);
+    public void enterEmail(String value) {
+        actions.type(emailTextbox, value);
     }
 
-    public void setConfirmPassword(String confirmPassword){
-        textConfirmPassword.sendKeys(confirmPassword);
+    public void enterPassword(String value) {
+        actions.type(passwordTextBox, value);
     }
 
-    public void checkSubscribe(){
-        radioBoxSubscribe.click();
-    }
+    public void subscribeNewsletter() {
 
-    public void selectNewsletter(String option){
-
-        if(option.equalsIgnoreCase("yes")){
-
-            radioNewsletterYes.click();
-        }
-        else{
-
-            radioNewsletterNo.click();
+        if (!actions.isSelected(newsletterCheckbox)) {
+            actions.click(newsletterCheckbox);
         }
     }
 
-    public void checkPolicyCheckbox(){
-        checkboxPolicy.click();
-    }
+    public void acceptPrivacyPolicy() {
 
-    public void clickContinue() {
-        btnContinue.click();
-    }
-
-    public boolean isRegistrationPageDisplayed(){
-        return txtRegisterAccount.isDisplayed();
-    }
-
-    public String getWarningMessage(){
-        return warningMessage.getText();
-    }
-
-    public boolean isRegistrationSuccessful(){
-        return textsuccessMessageConfirmation.isDisplayed();
-    }
-
-    public String getConfirmationMessage(){
-        try{
-            return (textsuccessMessageConfirmation.getText());
-        } catch (Exception e){
-            return (e.getMessage());
+        if (!actions.isSelected(privacyPolicyCheck)) {
+            actions.click(privacyPolicyCheck);
         }
     }
 
-    public void clickSidePanelLink(String linkName){
-        for(WebElement link : sidePanelLinks){
-            if(link.getText().equalsIgnoreCase(linkName)){
-                link.click();
-                break;
-            }
+    public AccountSuccessPage register(
+            String first,
+            String last,
+            String emailAddress,
+            String password,
+            boolean subscribe){
+
+        enterFirstName(first);
+        enterLastName(last);
+        enterEmail(emailAddress);
+        enterPassword(password);
+
+        if(subscribe){
+            subscribeNewsletter();
         }
+
+        acceptPrivacyPolicy();
+        actions.click(continueButton);
+
+        return new AccountSuccessPage(driver);
     }
+
+    public LoginPage navigateToLoginPage() {
+
+        actions.click(redirectedToLogin);
+
+        return new LoginPage(driver);
+    }
+
+
 
 
     }

@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Base.BasePage;
+import Components.AccountSidePanelComponent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,8 +11,11 @@ import java.util.List;
 
 public class LoginPage extends BasePage {
 
+    private final AccountSidePanelComponent sidePanel;
+
     public LoginPage(WebDriver driver){
         super(driver);
+        sidePanel = new AccountSidePanelComponent(driver);
     }
     private final By breadcrumb = By.xpath("//ul[@class='breadcrumb']");
     private final By breadcrumbLogin =  By.xpath("//ul[@class='breadcrumb']//a[normalize-space()='Login']");
@@ -21,8 +25,7 @@ public class LoginPage extends BasePage {
     private final By emailTextBox = By.xpath("//input[@id='input-email']");
     private final By passwordTextBox = By.xpath("//input[@id='input-password']");
     private final By buttonForgottenPassword = By.xpath("//form//a[normalize-space()='Forgotten Password']");
-    private final By loginButton = By.xpath("//input[@value='Login']");
-    private final By sidePanelLinksList = By.xpath("//aside//a");
+    private final By loginButton = By.xpath("//button[normalize-space()='Login']");
     private final By warningMessage = By.xpath("//div[contains(@class,'alert-danger')]");
 
     public MyAccountPage login(String email, String password){
@@ -34,6 +37,7 @@ public class LoginPage extends BasePage {
         return new MyAccountPage(driver);
 
     }
+
 
     public LoginPage loginWithInvalidCredentials(
             String email,
@@ -48,15 +52,29 @@ public class LoginPage extends BasePage {
         return this;
     }
 
-    public void clickSidePanelLink(String linkName){
-        for(WebElement link : sidePanelLinks){
-            if(link.getText().equalsIgnoreCase(linkName)){
-                link.click();
-                break;
-            }
-        }
+    public AccountSidePanelComponent sidePanel(){
+        return sidePanel;
     }
 
+
+    public String  getWarningMessage() {
+        return actions.getText(warningMessage);
+    }
+
+//    public RegisterPage clickContinue() {
+//
+//        actions.click(continueButton);
+//
+//        return new RegisterPage(driver);
+//    }
+
+
+//    public ForgotPasswordPage clickForgotPassword() {
+//
+//        actions.click(forgotPasswordLink);
+//
+//        return new ForgotPasswordPage(driver);
+//    }
 
 
 }

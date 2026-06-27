@@ -43,6 +43,14 @@ public class ConfigReader {
         return getProperty("password");
     }
 
+    public static String getInvalidUser(){
+        return getProperty("invalidemail");
+    }
+
+    public static String getInvalidPassword(){
+        return getProperty("invalidpassword");
+    }
+
     public static int getImplicitWait() {
         return Integer.parseInt(getProperty("implicit.wait"));
     }
@@ -58,5 +66,6 @@ public class ConfigReader {
     public static boolean isHeadless() {
         return Boolean.parseBoolean(getProperty("headless"));
     }
+
 
 }

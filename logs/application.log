@@ -1,433 +1,59 @@
-2026-03-17 14:04:42.152 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:04:42.508 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:04:43.980 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:04:43.992 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:04:46.510 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:04:46.611 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:04:50.734 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 14:18:39.018 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:18:39.252 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:18:39.988 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:18:40.000 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:18:43.190 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:18:43.275 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:18:48.216 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 14:36:30.308 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:36:30.599 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:36:31.813 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:36:31.818 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:36:34.080 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:36:34.127 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:36:38.991 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 14:39:44.989 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:39:45.387 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:39:46.196 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:39:46.203 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:39:48.353 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:39:48.414 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:39:53.424 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 14:39:55.591 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest *********
-2026-03-17 14:40:09.651 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:40:09.908 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:40:12.170 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:40:12.182 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:40:17.309 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:40:17.751 [TestNG-tests-1] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:40:30.685 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 14:40:30.970 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 14:40:47.910 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 14:40:47.911 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 14:40:51.262 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 14:40:51.304 [TestNG-tests-2] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 14:41:37.302 [TestNG-tests-3] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 16:04:34.585 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 16:04:34.860 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 16:04:36.328 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 16:04:36.541 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 16:04:38.238 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 16:04:39.465 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 16:04:44.030 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 16:04:46.675 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest *********
-2026-03-17 16:09:16.140 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-03-17 16:09:16.357 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-03-17 16:09:17.039 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-03-17 16:09:17.039 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-03-17 16:09:19.128 [main] INFO  testCases.TC001_AccountRegistrationTest - Validating expected Message..
-2026-03-17 16:09:19.227 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Finished TC001_AccountRegistrationTest **********
-2026-03-17 16:09:22.479 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-03-17 16:09:24.726 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest *********
-2026-03-17 16:21:12.310 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:21:26.242 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:21:37.470 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:21:48.575 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:21:59.670 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:22:49.191 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:23:02.801 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:23:14.028 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:23:22.566 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:23:22.716 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:03.177 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:16.723 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=145.0.7632.160)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f7eb2e7bafd0639bd342f2d4efd388e, clickElement {id=f.CDAD2703E990D80E028A413D5A68B568.d.6156921D1D10CB153EFA70CED35274D6.e.94}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65186}, goog:processID: 8780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65186/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (9f7eb2e7bafd0639bd342f2d4efd388e)] -> xpath: //ul[@class='dropdown-menu dropdown-menu-right']//a[normalize-space()='Logout']]
-Session ID: 9f7eb2e7bafd0639bd342f2d4efd388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.41.0.jar:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source) ~[?:?]
-	at PageObjects.MyAccountPage.clickLogout(MyAccountPage.java:29) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:36) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-03-17 16:26:16.763 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:27.994 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Login']"}
-  (Session info: chrome=145.0.7632.160)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f7eb2e7bafd0639bd342f2d4efd388e, findElement {using=xpath, value=//a[normalize-space()='Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65186}, goog:processID: 8780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65186/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f7eb2e7bafd0639bd342f2d4efd388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source) ~[?:?]
-	at PageObjects.HomePage.clickLogin(HomePage.java:33) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:22) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-03-17 16:26:28.045 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:31.633 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: unable to send message to renderer
-  (Session info: chrome=145.0.7632.160)
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f7eb2e7bafd0639bd342f2d4efd388e, findElement {using=xpath, value=//a[normalize-space()='Login']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65186}, goog:processID: 8780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65186/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f7eb2e7bafd0639bd342f2d4efd388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source) ~[?:?]
-	at PageObjects.HomePage.clickLogin(HomePage.java:33) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:22) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-03-17 16:26:31.641 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:31.815 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f7eb2e7bafd0639bd342f2d4efd388e, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65186}, goog:processID: 8780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65186/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f7eb2e7bafd0639bd342f2d4efd388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source) ~[?:?]
-	at PageObjects.HomePage.clickMyAccount(HomePage.java:25) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:21) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-03-17 16:26:31.821 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:26:31.826 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.41.0', revision: '9fc754f'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9f7eb2e7bafd0639bd342f2d4efd388e, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.160, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65186}, goog:processID: 8780, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65186/devtoo..., se:cdpVersion: 145.0.7632.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9f7eb2e7bafd0639bd342f2d4efd388e
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.41.0.jar:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.click(Unknown Source) ~[?:?]
-	at PageObjects.HomePage.clickMyAccount(HomePage.java:25) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:21) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-03-17 16:29:45.170 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:29:49.332 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* Finished TC_003_LoginTest *********
-2026-03-17 16:29:49.342 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:30:02.179 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* Finished TC_003_LoginTest *********
-2026-03-17 16:30:02.191 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:30:27.108 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* Finished TC_003_LoginTest *********
-2026-03-17 16:30:27.108 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:30:39.097 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* Finished TC_003_LoginTest *********
-2026-03-17 16:30:39.097 [TestNG-tests-1] INFO  testCases.TC003_LoginDDT - ********* starting TC003_LoginDDT *********
-2026-03-17 16:30:39.537 [TestNG-tests-1] ERROR testCases.TC003_LoginDDT - Test Failed : 
-java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96) ~[selenium-remote-driver-4.41.0.jar:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51) ~[selenium-support-4.41.0.jar:?]
-	at jdk.proxy2/jdk.proxy2.$Proxy49.sendKeys(Unknown Source) ~[?:?]
-	at PageObjects.LoginPage.setEmail(LoginPage.java:23) ~[test-classes/:?]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:25) [test-classes/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
-	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
-	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463) [testng-7.12.0.jar:7.12.0]
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64) [testng-7.12.0.jar:7.12.0]
-	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:328) [?:?]
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095) [?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619) [?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
-2026-05-27 13:47:38.050 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-05-27 13:47:41.404 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest *********
-2026-05-27 13:47:49.589 [TestNG-tests-1] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest *********
-2026-05-27 13:47:51.994 [TestNG-tests-1] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest *********
-2026-05-27 14:15:37.851 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 14:15:41.163 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 14:15:41.191 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 14:15:43.336 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 14:15:54.356 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 14:15:57.329 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 14:21:24.267 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:21:27.856 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:21:27.876 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 14:21:30.137 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 14:21:30.145 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 14:21:32.621 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 14:21:43.128 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:21:45.614 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:22:48.644 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:22:53.398 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 14:22:53.416 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 14:22:55.897 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 14:22:55.911 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 14:22:58.451 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 14:22:58.472 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 14:23:01.157 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 14:23:11.427 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 14:23:13.782 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:13:19.007 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:13:21.071 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:13:21.079 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 15:13:22.486 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 15:13:22.502 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:13:23.147 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:13:25.377 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:13:25.394 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 15:13:26.876 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 15:19:59.896 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:20:06.625 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:20:06.634 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 15:20:15.928 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 15:20:15.940 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:20:19.297 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:20:19.307 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:20:22.700 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:20:22.710 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 15:20:25.115 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 15:20:33.008 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:20:35.448 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:22:49.936 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:22:53.077 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:22:53.082 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 15:22:54.945 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
-2026-05-27 15:22:54.952 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:22:56.277 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:22:56.285 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:22:57.826 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:22:57.843 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 15:22:59.531 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 15:23:08.315 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:23:10.902 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:24:11.274 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Empty Credential *********
-2026-05-27 15:24:12.225 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
-2026-05-27 15:24:14.842 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:24:17.184 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:24:17.188 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:24:18.651 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Password *********
-2026-05-27 15:24:18.664 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-05-27 15:24:20.161 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
-2026-05-27 15:26:23.848 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:31:32.010 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:31:35.329 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:31:44.793 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-27 15:31:46.397 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:19:16.747 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:19:20.332 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:21:40.487 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:21:45.859 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:23:04.241 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:23:07.645 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:24:42.309 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-05-31 00:24:44.397 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Invalid Email *********
-2026-06-04 22:52:22.510 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-06-04 22:52:36.813 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
-2026-06-04 22:53:52.720 [main] INFO  testCases.TC001_AccountRegistrationTest - ********* Starting TC001_AccountRegistrationTest *********
-2026-06-04 22:53:53.275 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on MyAccount Link 
-2026-06-04 22:53:55.975 [main] INFO  testCases.TC001_AccountRegistrationTest - Clicked on Register Link 
-2026-06-04 22:53:56.024 [main] INFO  testCases.TC001_AccountRegistrationTest - Providing customer Details
-2026-06-04 22:54:07.948 [main] ERROR testCases.TC001_AccountRegistrationTest - Test Failed...
-2026-06-04 22:54:11.375 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Invalid Email *********
-2026-06-04 22:54:19.969 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:01:03.698 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:01:03.707 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:01:06.744 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:01:08.978 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-06-27 14:01:09.307 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:01:09.310 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:01:09.310 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:01:11.304 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-06-27 14:01:13.180 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-06-27 14:01:13.587 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:48:33.708 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:48:33.713 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:48:36.910 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:48:39.383 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-06-27 14:48:39.860 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:48:39.864 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:48:39.864 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:48:42.200 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-06-27 14:48:44.639 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-06-27 14:48:44.864 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:49:27.401 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:49:27.406 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:49:29.902 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:49:31.890 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-06-27 14:49:32.176 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:49:32.179 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:49:32.179 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:49:33.746 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-06-27 14:49:36.352 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:50:20.961 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:50:20.965 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:50:23.710 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:50:25.923 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-06-27 14:50:26.262 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:50:26.266 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:50:26.267 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:50:28.636 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-06-27 14:50:30.752 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-06-27 14:50:30.967 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:54:42.435 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:54:42.439 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:55:18.757 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:55:18.764 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:55:22.002 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-06-27 14:55:22.226 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-06-27 14:55:22.880 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-06-27 14:55:23.528 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-06-27 14:55:24.114 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-06-27 14:55:24.114 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-06-27 14:55:24.516 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-06-27 14:55:24.519 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-06-27 14:55:24.519 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-06-27 14:55:27.117 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-06-27 14:55:27.386 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-06-27 14:55:28.224 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-06-27 14:55:28.880 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-06-27 14:55:29.467 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-06-27 14:55:29.467 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-06-27 14:55:29.747 [main] INFO  Driver.DriverFactory - Closing Browser

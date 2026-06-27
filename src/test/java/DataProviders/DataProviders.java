@@ -1,7 +1,8 @@
-package utilities;
+package DataProviders;
 
 import lombok.extern.slf4j.Slf4j;
 import org.testng.annotations.DataProvider;
+import utilities.ExcelUtility;
 
 import java.io.IOException;
 

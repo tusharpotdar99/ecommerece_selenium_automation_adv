@@ -1,6 +1,7 @@
 package Components;
 
 import Base.BasePage;
+import PageObjects.LoginPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -25,6 +26,12 @@ public class HeaderComponent extends BasePage {
     public void searchProduct(String product) {
         actions.type(searchBox, product);
         actions.click(searchButton);
+    }
+
+    public LoginPage navigateToLoginPage(){
+        actions.click(myAccount);
+        actions.click(login);
+        return new LoginPage(driver);
     }
 
     public void clickMyAccount() {
@@ -53,6 +60,10 @@ public class HeaderComponent extends BasePage {
 
     public boolean isLogoDisplayed() {
         return actions.isDisplayed(logo);
+    }
+
+    public boolean isMyAccoutDisplayed(){
+        return actions.isDisplayed(myAccount);
     }
 
 }
