@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,69 +13,39 @@ public class LoginPage extends BasePage {
     public LoginPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//ul[@class='breadcrumb']")
-    WebElement breadcrumb;
+    private final By breadcrumb = By.xpath("//ul[@class='breadcrumb']");
+    private final By breadcrumbLogin =  By.xpath("//ul[@class='breadcrumb']//a[normalize-space()='Login']");
+    private final By txtNewCustomer = By.xpath("//h2[normalize-space()='New Customer']");
+    private final By btnContinue = By.xpath( "//a[normalize-space()='Continue']");
+    private final By txtReturningCustomer = By.xpath("//h2[normalize-space()='Returning Customer']");
+    private final By emailTextBox = By.xpath("//input[@id='input-email']");
+    private final By passwordTextBox = By.xpath("//input[@id='input-password']");
+    private final By buttonForgottenPassword = By.xpath("//form//a[normalize-space()='Forgotten Password']");
+    private final By loginButton = By.xpath("//input[@value='Login']");
+    private final By sidePanelLinksList = By.xpath("//aside//a");
+    private final By warningMessage = By.xpath("//div[contains(@class,'alert-danger')]");
 
-    @FindBy(xpath = "//ul[@class='breadcrumb']//a[normalize-space()='Login']")
-    WebElement breadcrumbLogin;
+    public MyAccountPage login(String email, String password){
 
-    @FindBy(xpath = "//h2[normalize-space()='New Customer']")
-    WebElement txtNewCustomer;
+        actions.type(emailTextBox, email);
+        actions.type(passwordTextBox, password);
+        actions.click(loginButton);
 
-    @FindBy(xpath = "//a[normalize-space()='Continue']")
-    WebElement btnContinue;
+        return new MyAccountPage(driver);
 
-    @FindBy(xpath = "//h2[normalize-space()='Returning Customer']")
-    WebElement txtReturningCustomer;
-
-    @FindBy(xpath = "//input[@id='input-email']")
-    WebElement textEmailAddress;
-
-    @FindBy(xpath = "//input[@id='input-password']")
-    WebElement textPassword;
-
-    @FindBy(xpath = "//form//a[normalize-space()='Forgotten Password']")
-    WebElement buttonForgottenPassword;
-
-    @FindBy(xpath = "//input[@value='Login']")
-    WebElement buttonLogin;
-
-    @FindBy(xpath = "//aside//a")
-    List<WebElement> sidePanelLinks;
-
-    @FindBy(xpath = "//div[contains(@class,'alert-danger')]")
-    WebElement warningMessage;
-
-    public void setEmail(String email){
-        textEmailAddress.sendKeys(email);
     }
 
-    public void setPassword(String password){
-        textPassword.sendKeys(password);
-    }
+    public LoginPage loginWithInvalidCredentials(
+            String email,
+            String password) {
 
-    public void clickLogin(){
-        buttonLogin.click();
-    }
+        actions.type(emailTextBox, email);
 
-    public void clickContinue(){
-        btnContinue.click();
-    }
+        actions.type(passwordTextBox, password);
 
-    public void clickForgotPassword(){
-        buttonForgottenPassword.click();
-    }
+        actions.click(loginButton);
 
-    public boolean isLoginPageDisplayed(){
-        return txtReturningCustomer.isDisplayed();
-    }
-
-    public String getWarningMessage(){
-        return warningMessage.getText();
-    }
-
-    public String getBreadcrumbText(){
-        return breadcrumbLogin.getText();
+        return this;
     }
 
     public void clickSidePanelLink(String linkName){

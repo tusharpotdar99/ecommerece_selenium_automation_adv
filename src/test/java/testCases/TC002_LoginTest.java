@@ -1,31 +1,40 @@
 package testCases;
 
+import Base.BasePage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import PageObjects.MyAccountPage;
 import utilities.CaptureScreen;
+import utilities.ConfigReader;
 
 import java.io.IOException;
 
-public class TC002_LoginTest extends BaseClass {
+public class TC002_LoginTest extends BasePage {
 
+    private static final Logger logger = LogManager.getLogger(TC002_LoginTest.class);
+    public TC002_LoginTest(WebDriver driver){
+        super(driver);
+    }
 
-    @Test(enabled = true)
+    @Test(enabled = true, description = "verify user can login with valid credentials.")
     public void verify_login_with_valid_credentials(){
         logger.info("********* Starting TC_002_LoginTest With Valid Credential *********");
 
         try {
-
-
             HomePage homePage = new HomePage(driver);
-            homePage.clickMyAccount();
-            homePage.clickLogin();
+            homePage.header().clickMyAccount();
+            homePage.header().clickLogin();
 
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.setEmail(properties.getProperty("email"));
+            MyAccountPage myAccountPage = loginPage.login(ConfigReader.getUsername(),ConfigReader.getPassword());
+
+            Assert.assertTrue(myAccountPage.isDisplayed());
             loginPage.setPassword(properties.getProperty("password"));
             loginPage.clickLogin();
 
