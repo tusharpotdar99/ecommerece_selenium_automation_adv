@@ -22,12 +22,10 @@ public class TC002_LoginTest extends BaseTest {
 
         try {
             HomePage homePage = new HomePage(driver);
-            homePage.header().clickMyAccount();
-            logger.info("Click my account");
-            homePage.header().clickLogin();
-            logger.info("Click login");
+//            homePage.header().navigateToLoginPage();
+            logger.info("navigate to login");
 
-            LoginPage loginPage = new LoginPage(driver);
+            LoginPage loginPage = homePage.header().navigateToLoginPage();
             loginPage.login(ConfigReader.getUsername(),ConfigReader.getPassword());
             logger.info("Passed Username and Password and Clicked Login");
             MyAccountPage myAccountPage = new MyAccountPage(driver);
@@ -51,13 +49,9 @@ public class TC002_LoginTest extends BaseTest {
 
 
             HomePage homePage = new HomePage(driver);
-            homePage.header().clickMyAccount();
-            logger.info("Click my account");
-            homePage.header().clickLogin();
-            logger.info("Click login");
+            LoginPage loginPage = homePage.header().navigateToLoginPage();
+            logger.info("navigate to login");
 
-
-            LoginPage loginPage = new LoginPage(driver);
             loginPage.login(
                     ConfigReader.getInvalidUser(),
                     ConfigReader.getInvalidPassword());
@@ -82,12 +76,8 @@ public class TC002_LoginTest extends BaseTest {
 
         try {
             HomePage homePage = new HomePage(driver);
-            homePage.header().clickMyAccount();
-            logger.info("Click my account");
-            homePage.header().clickLogin();
-            logger.info("Click login");
-
-            LoginPage loginPage = new LoginPage(driver);
+            LoginPage loginPage = homePage.header().navigateToLoginPage();
+            logger.info("navigate to login");
             loginPage.login(username, password);
             logger.info("Entered Username: {}", username);
             logger.info("Clicked Login button");

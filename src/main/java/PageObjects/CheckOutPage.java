@@ -14,7 +14,7 @@ public class CheckOutPage extends BasePage {
 
     private final By radioExistingAddress =  By.xpath("//input[@id='input-shipping-existing']");
     private final By radioNewAddress = By.xpath("//input[@id='input-shipping-new']");
-    private  final By labelCheckout = By.xpath("//div[@id='content']//h1");
+    private final By labelCheckout = By.xpath("//div[@id='content']//h1");
     private final By labelShippingAddress = By.xpath("//div[@id='checkout-shipping-address']//legend");
     private final  By textFirstName = By.xpath("//input[@id='input-shipping-firstname']");
     private final By textLastName = By.xpath( "//input[@id='input-shipping-lastname']");

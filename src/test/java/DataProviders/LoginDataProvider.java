@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class LoginDataProvider {
 
-    @DataProvider(name = "LoginData", parallel = true)
+    @DataProvider(name = "LoginData")
     public Object[][] getLoginData() throws IOException{
         String path = System.getProperty("user.dir") + "/testData/LoginData.xlsx";
 

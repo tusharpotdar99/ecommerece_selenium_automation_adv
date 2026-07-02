@@ -15,6 +15,11 @@ public class BaseTest {
     public void setup(){
         DriverManager.initDriver(ConfigReader.getBrowser());
         driver = DriverFactory.getDriver();
+        System.out.println(
+                Thread.currentThread().getName()
+                +" -> "
+                + ((org.openqa.selenium.remote.RemoteWebDriver) driver).getSessionId()
+        );
         driver.get(ConfigReader.getApplicationUrl());
 
     }
