@@ -1,6 +1,7 @@
 package Base;
 
 import Driver.DriverFactory;
+import Driver.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -10,15 +11,15 @@ public class BaseTest {
 
     protected WebDriver driver;
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setup(){
-        DriverFactory.initDriver(ConfigReader.getBrowser());
+        DriverManager.initDriver(ConfigReader.getBrowser());
         driver = DriverFactory.getDriver();
         driver.get(ConfigReader.getApplicationUrl());
 
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown(){
         DriverFactory.quitDriver();
     }

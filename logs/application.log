@@ -57,3 +57,63 @@
 2026-06-27 14:55:29.467 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
 2026-06-27 14:55:29.467 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
 2026-06-27 14:55:29.747 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:02:18.816 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:02:18.823 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:03:27.021 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:03:27.028 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:03:33.937 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 14:03:34.814 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:03:35.461 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:03:36.018 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 14:03:36.802 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 14:03:36.803 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 14:03:37.137 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:03:37.141 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:03:37.141 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:03:38.841 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 14:03:39.352 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:03:40.009 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:03:40.595 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-07-02 14:03:41.159 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 14:03:41.159 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-07-02 14:03:41.439 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:03:42.404 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:03:42.404 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:03:44.130 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 14:03:44.318 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:03:45.104 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:03:45.962 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 14:03:45.962 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 14:03:46.564 [main] INFO  testCases.TC002_LoginTest - Login successful as expected.
+2026-07-02 14:03:46.564 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 14:03:46.858 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:03:46.859 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:03:46.860 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:03:48.692 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 14:03:48.884 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:03:49.375 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:03:49.866 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 14:03:49.866 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 14:04:10.042 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 14:04:10.042 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 14:04:10.329 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:04:10.331 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:04:10.331 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:04:12.414 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 14:04:12.672 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:04:13.129 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:04:13.592 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 14:04:13.594 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 14:04:33.649 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 14:04:33.649 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 14:04:33.919 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 14:04:33.920 [main] INFO  Driver.DriverFactory - Initializing browser: chrome
+2026-07-02 14:04:33.920 [main] INFO  Driver.DriverFactory - Launching Chrome browser....
+2026-07-02 14:04:35.554 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 14:04:36.043 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 14:04:36.507 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 14:04:36.983 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 14:04:36.984 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 14:04:57.020 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 14:04:57.021 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 14:04:57.302 [main] INFO  Driver.DriverFactory - Closing Browser

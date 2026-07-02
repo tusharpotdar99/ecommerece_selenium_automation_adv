@@ -1,6 +1,7 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,202 +17,106 @@ public class ProductDetailsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//ul[@class='breadcrumb']")
-    WebElement breadcrumb;
 
-    @FindBy(xpath = "(//ul[@class='breadcrumb']//li//a)[2]")
-    WebElement breadcrumbProduct;
+    private final By  labelProductName=  By.xpath("//div[@id='content']//h1");
+    private final By  labelBrandName=  By.xpath("(//div[@id='content']//li)[1]");
+    private final By  labelProductCode=  By.xpath("(//div[@id='content']//li)[2]");
+    private final By  labelRewardPoints=  By.xpath("(//div[@id='content']//li)[3]");
+    private final By  labelProductStockAvailability=  By.xpath("(//div[@id='content']//li)[4]");
+    private final By  labelReviews=  By.xpath("//div[@class='rating']//a[1]");
+    private final By linkWriteReview =  By.xpath("//div[@class='rating']//a[2]");
+    private final By labelProductPrice =  By.xpath("//span[@class='price-new']");
+    private final By labelProductPriceExcludedTax =  By.xpath("//li[contains(text(),'Ex Tax')]");
+    private final By buttonAddToWishList =  By.xpath("//button[@aria-label='Add to Wish List']");
+    private final By buttonCompareProduct  =  By.xpath("//button[@title='Compare this Product']");
+    private final By textProductQuantity =  By.xpath("//input[@id='input-quantity']");
+    private final By buttonAddtoCart =  By.xpath("//button[@id='button-cart']");
+    private final By imageProductImage =  By.xpath("(//div[@class='image magnific-popup']//a//img)[1]");
+    private final By imageProductSV =  By.xpath("//div[@class='image magnific-popup']//div//a");
+    private final By labelDescriptionNav =  By.xpath("//a[normalize-space()='Description']");
+    private final By labelSpecificationNav =  By.xpath("//a[normalize-space()='Specification']");
+    private final By labelReviewNav =  By.xpath("//a[contains(normalize-space(),'Reviews')]");
+    private final By descriptionTexts =  By.xpath("//div[@id='tab-description']");
+    private final By specificationText =  By.xpath("//div[@id='tab-specification']");
+    private final By textReviewerName =  By.xpath("//input[@id='input-author']");
+    private final By textAreaReview =  By.xpath("//textarea[@id='input-text']");
+    private final By radioRating =  By.xpath("//div[@id='input-rating']//input[@type='radio']");
+    private final By buttonReview =  By.xpath("//button[@id='button-review']");
 
-    @FindBy(xpath = "//div[@id='content']//h1")
-    WebElement labelProductName;
-
-    @FindBy(xpath = "(//div[@id='content']//li)[1]")
-    WebElement labelBrandName;
-
-    @FindBy(xpath = "(//div[@id='content']//li)[2]")
-    WebElement labelProductCode;
-
-    @FindBy(xpath = "(//div[@id='content']//li)[3]")
-    WebElement labelRewardPoints;
-
-    @FindBy(xpath = "(//div[@id='content']//li)[4]")
-    WebElement labelProductStockAvailability;
-
-    @FindBy(xpath = "//div[@class='rating']//a[1]")
-    WebElement labelReviews;
-
-    @FindBy(xpath = "//div[@class='rating']//a[2]")
-    WebElement linkWriteReview;
-
-    @FindBy(xpath = "//span[@class='price-new']")
-    WebElement labelProductPrice;
-
-    @FindBy(xpath = "//li[contains(text(),'Ex Tax')]")
-    WebElement labelProductPriceExcludedTax;
-
-    @FindBy(xpath = "//button[@aria-label='Add to Wish List']")
-    WebElement buttonAddToWishList;
-
-    @FindBy(xpath = "//button[@title='Compare this Product']")
-    WebElement buttonCompareProduct;
-
-    @FindBy(xpath = "//input[@id='input-quantity']")
-    WebElement textProductQuantity;
-
-    @FindBy(xpath = "//button[@id='button-cart']")
-    WebElement buttonAddtoCart;
-
-    @FindBy(xpath = "(//div[@class='image magnific-popup']//a//img)[1]")
-//    @FindBy(css = ".image.magnific-popup img")
-    WebElement imageProductImage;
-
-    @FindBy(xpath = "//div[@class='image magnific-popup']//div//a")
-    WebElement imageProductSV;
-
-    @FindBy(xpath = "//a[normalize-space()='Description']")
-    WebElement labelDescriptionNav;
-
-    @FindBy(xpath = "//a[normalize-space()='Specification']")
-    WebElement labelSpecificationNav;
-
-    @FindBy(xpath = "//a[contains(normalize-space(),'Reviews')]")
-    WebElement labelReviewNav;
-
-    @FindBy(xpath = "//div[@id='tab-description']")
-    WebElement descriptionTexts;
-
-    @FindBy(xpath = "//div[@id='tab-specification']")
-    WebElement specificationText;
-
-    @FindBy(xpath = "//input[@id='input-author']")
-    WebElement textReviewerName;
-
-    @FindBy(xpath = "//textarea[@id='input-text']")
-    WebElement textAreaReview;
-
-    @FindBy(xpath = "//div[@id='input-rating']//input[@type='radio']")
-    List<WebElement> radioRating;
-
-    @FindBy(xpath = "//button[@id='button-review']")
-    WebElement buttonReview;
-
-    public String getProductName(){
-        return labelProductName.getText();
+    public boolean isProductPageDisplayed(){
+        return actions.isDisplayed(labelProductName);
     }
 
-    public String getBrandName(){
-        return labelBrandName.getText();
+    public boolean isReviewTabDisplayed(){
+        return actions.isDisplayed(labelReviewNav);
     }
 
-    public String getRewardPoints(){
-        return labelRewardPoints.getText();
+    public void clickProductImage(){
+        actions.click(imageProductImage);
     }
 
-    public String getStockAvailability(){
-        return labelProductStockAvailability.getText();
+    public String DescriptionText(){
+        actions.click(labelDescriptionNav);
+        return actions.getText(descriptionTexts);
     }
 
-    public String getProductPrice(){
-        return labelProductPrice.getText();
+    public String SpecificationText(){
+        actions.click(labelSpecificationNav);
+        return actions.getText(specificationText);
     }
 
-    public String getExcludedTaxPrice(){
-        return labelProductPriceExcludedTax.getText();
+
+
+    public void productInformation(){
+        actions.getText(labelProductName);
+        actions.getText(labelBrandName);
+        actions.getText(labelRewardPoints);
+        actions.getText(labelProductStockAvailability);
+        actions.getText(labelProductPrice);
+        actions.getText(labelProductPriceExcludedTax);
     }
 
-    public void clickAddToWishList(){
-        buttonAddToWishList.click();
+    public void addToCart(){
+        actions.click(buttonAddtoCart);
     }
 
-    public void clickCompareProduct(){
-        buttonCompareProduct.click();
+    public void addToWishList(){
+        actions.click(buttonAddToWishList);
+    }
+
+    public void CompareProductPage(){
+        actions.click(buttonCompareProduct);
     }
 
     public void enterProductQuantity(String quantity){
-        textProductQuantity.clear();
-        textProductQuantity.sendKeys(quantity);
-    }
-
-    public void clickAddToCart(){
-        buttonAddtoCart.click();
+        actions.type(textProductQuantity, quantity);
     }
 
     public void addProductToCart(String quantity){
         enterProductQuantity(quantity);
-        clickAddToCart();
+        addToCart();
     }
 
     public boolean isProductImageDisplayed(){
-        return imageProductImage.isDisplayed();
+        return actions.isDisplayed(imageProductImage);
     }
 
-    public void clickProductImage(){
-        imageProductImage.click();
-    }
 
-    public void clickDescriptionTab(){
-        labelDescriptionNav.click();
-    }
 
-    public void clickSpecificationTab(){
-        labelSpecificationNav.click();
-    }
-
-    public void clickReviewTab(){
-        labelReviewNav.click();
-    }
-
-    public String getDescriptionText(){
-        return descriptionTexts.getText();
-    }
-
-    public String getSpecificationText(){
-        return specificationText.getText();
-    }
-
-    public void enterReviewerName(String name){
-        textReviewerName.sendKeys(name);
-    }
-
-    public void enterReviewText(String review){
-        textAreaReview.sendKeys(review);
-    }
-
-    public void selectRating(int rating){
-        radioRating.get(rating - 1).click();
-    }
-
-    public void clickReviewButton(){
-        buttonReview.click();
-    }
 
     public void submitReview(
             String reviewerName,
             String reviewText,
-            int rating){
+            String rating){
 
-        clickReviewTab();
-
-        enterReviewerName(reviewerName);
-
-        enterReviewText(reviewText);
-
-        selectRating(rating);
-
-        clickReviewButton();
+        actions.click(labelReviewNav);
+        actions.type(textReviewerName, reviewerName);
+        actions.type(textAreaReview, reviewText);
+        actions.selectByVisibleText(radioRating, rating);
+        actions.click(buttonReview);
     }
 
-    public boolean isProductPageDisplayed(){
-        return labelProductName.isDisplayed();
-    }
 
-    public boolean isReviewTabDisplayed(){
-        return labelReviewNav.isDisplayed();
-    }
-
-    public String getBreadcrumbText(){
-        return breadcrumb.getText();
-    }
 
 
 

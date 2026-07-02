@@ -1,9 +1,10 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+
 
 import java.util.List;
 
@@ -11,98 +12,64 @@ public class WishListPage extends BasePage {
 
     public WishListPage(WebDriver driver){super(driver);}
 
-    @FindBy(xpath = "//h1")
-    WebElement labelMyWishlist;
-
-    @FindBy(xpath = "//button[normalize-space()='Add to Cart']")
-    WebElement buttonAddTocart;
-
-    @FindBy(xpath = "//a[normalize-space()='Remove']")
-    WebElement buttonRemove;
-
-    @FindBy(xpath = "//a[normalize-space()='Continue']")
-    WebElement buttonContinue;
-
-    @FindBy(xpath = "//table//thead//th")
-    List<WebElement> tableHeaders;
-
-    @FindBy(xpath = "//table//tbody//tr")
-    List<WebElement> tableRowsOrders;
-
-    @FindBy(xpath = "//table//tbody//tr//td[1]//img")
-    WebElement imgProduct;
-
-    @FindBy(xpath = "//table//tbody//tr//td[2]")
-    WebElement labelProductName;
-
-    @FindBy(xpath = "//table//tbody//tr//td[3]")
-    WebElement labelModel;
-
-    @FindBy(xpath = "//table//tbody//tr//td[4]")
-    WebElement labelStock;
-
-    @FindBy(xpath = "//table//tbody//tr//td[5]")
-    WebElement labelUnitPrice;
-
+    private final By labelMyWishlist = By.xpath("//h1");
+    private final By buttonAddTocart = By.xpath("//button[normalize-space()='Add to Cart']");
+    private final By buttonRemove = By.xpath("//a[normalize-space()='Remove']");
+    private final By buttonContinue  = By.xpath("//a[normalize-space()='Continue']");
+    private final By tableHeaders = By.xpath("//table//thead//th");
+    private final By tableRowsOrders = By.xpath("//table//tbody//tr");
+    private final By imgProduct  = By.xpath("//table//tbody//tr//td[1]//img");
+    private final By labelProductName = By.xpath("//table//tbody//tr//td[2]");
+    private final By labelModel = By.xpath("//table//tbody//tr//td[3]");
+    private final By labelStock  = By.xpath("//table//tbody//tr//td[4]");
+    private final By labelUnitPrice = By.xpath("//table//tbody//tr//td[5]");
+    
     public boolean isWishListPageDisplayed(){
 
-        return labelMyWishlist.isDisplayed();
+        return actions.isDisplayed(labelMyWishlist);
     }
 
     public String getWishListPageHeading(){
 
-        return labelMyWishlist.getText();
+        return actions.getText(labelMyWishlist);
     }
 
     public int getWishListProductsCount(){
 
-        return tableRowsOrders.size();
+        return actions.getElementCount(tableRowsOrders);
     }
 
     public boolean isProductImageDisplayed(){
 
-        return imgProduct.isDisplayed();
+        return actions.isDisplayed(imgProduct);
     }
-
-
-
-
-
-    // ==========================
-    // Product Detail Methods
-    // ==========================
 
     public String getProductName(){
 
-        return labelProductName.getText();
+        return actions.getText(labelProductName);
     }
 
     public String getProductModel(){
 
-        return labelModel.getText();
+        return actions.getText(labelModel);
     }
 
     public String getProductStock(){
 
-        return labelStock.getText();
+        return actions.getText(labelStock);
     }
 
     public String getProductUnitPrice(){
 
-        return labelUnitPrice.getText();
+        return actions.getText(labelUnitPrice);
     }
 
 
-
-
-
-    // ==========================
-    // Table Header Methods
-    // ==========================
-
     public void printTableHeaders(){
 
-        for(WebElement header : tableHeaders){
+        List<WebElement> headers = actions.getElements(tableHeaders);
+
+        for(WebElement header : headers){
 
             System.out.println(header.getText());
         }
@@ -115,21 +82,21 @@ public class WishListPage extends BasePage {
     // ==========================
     // Button Action Methods
     // ==========================
-
-    public void clickAddToCart(){
-
-        buttonAddTocart.click();
-    }
-
-    public void clickRemove(){
-
-        buttonRemove.click();
-    }
-
-    public void clickContinue(){
-
-        buttonContinue.click();
-    }
+//
+//    public void clickAddToCart(){
+//
+//        buttonAddTocart.click();
+//    }
+//
+//    public void clickRemove(){
+//
+//        buttonRemove.click();
+//    }
+//
+//    public void clickContinue(){
+//
+//        buttonContinue.click();
+//    }
 
 
 
@@ -139,15 +106,15 @@ public class WishListPage extends BasePage {
     // Complete Wishlist Flow
     // ==========================
 
-    public void moveProductToCart(){
-
-        clickAddToCart();
-    }
-
-    public void removeProductFromWishList(){
-
-        clickRemove();
-    }
+//    public void moveProductToCart(){
+//
+//        clickAddToCart();
+//    }
+//
+//    public void removeProductFromWishList(){
+//
+//        clickRemove();
+//    }
 
 
 

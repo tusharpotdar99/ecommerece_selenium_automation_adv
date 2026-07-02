@@ -1,199 +1,106 @@
 package PageObjects;
 
 import Base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
 
 public class ShoppingCartPage extends BasePage {
 
     public ShoppingCartPage(WebDriver driver){
         super(driver);
     }
-    @FindBy(xpath = "//ul[@class='breadcrumb']")
-    WebElement breadcrumb;
 
-    @FindBy(xpath = "//div[@id='checkout-cart']//li[2]")
-    WebElement breadcrumbShoppingCart;
-
-    @FindBy(xpath = "//h1[normalize-space()='Shopping Cart']")
-    WebElement labelShoppingCart;
-
-    @FindBy(xpath = "//div[@id='checkout-cart']//p")
-    WebElement labelShoppingCartEmpty;
-
-    @FindBy(xpath = "//a[normalize-space()='Continue']")
-    WebElement buttonContinueHomeProductSearch;
-
-    @FindBy(xpath = "//h1")
-    WebElement LabelShoppingCartWeight;
-
-    @FindBy(xpath = "//table//tr[1]//td[1]//img")
-    WebElement imgProductCart;
-
-    @FindBy(xpath = "//table//tr[1]//td[2]")
-    WebElement labelProductInCart;
-
-    @FindBy(xpath = "//input[@name='quantity']")
-    WebElement txtQuantityCartProd;
-
-    @FindBy(xpath = "//button[@title='Update']")
-    WebElement buttonUpdateShoppingCart;
-
-    @FindBy(xpath = "//a[@title='Remove']")
-    WebElement buttonRemoveProductFromCart;
-
-    @FindBy(xpath = "(//tbody//tr[1]//td[4])[2]")
-    WebElement labelUnitPriceProduct;
-
-    @FindBy(xpath = "(//tbody//tr[1]//td[5])[1]")
-    WebElement labelProductPriceByQuantity;
-
-    @FindBy(xpath = "(//tfoot[@id='checkout-total']//td[@class='text-end'])[2]")
-    WebElement labelSubTotal;
-
-    @FindBy(xpath = "(//tfoot[@id='checkout-total']//td[@class='text-end'])[4]")
-    WebElement LabelEcoTax;
-
-    @FindBy(xpath = "(//tfoot[@id='checkout-total']//td[@class='text-end'])[6]")
-    WebElement labelVatPrice;
-
-    @FindBy(xpath = "(//tfoot[@id='checkout-total']//td[@class='text-end'])[8]")
-    WebElement labelTotalofAllPrice;
-
-    @FindBy(xpath = "//h2[normalize-space()='What would you like to do next?']")
-    WebElement labelNextOperations;
-
-    @FindBy(xpath = "//p[contains(text(),'Choose if you have a discount code or reward point')]")
-    WebElement labelInstructionsCodeReward;
-
-    @FindBy(xpath = "//button[normalize-space()='Estimate Shipping & Taxes']")
-    WebElement buttonExpandEstimateShipping;
-
-    @FindBy(xpath = "//select[@id='input-country']")
-    WebElement selectDrpdwnCountryShippingEst;
-
-    @FindBy(xpath = "//select[@id='input-zone']")
-    WebElement selectDrpdwnStateShippingEst;
-
-    @FindBy(xpath = "//input[@id='input-postcode']")
-    WebElement textPostCodeShippingEst;
-
-    @FindBy(xpath = "//button[@id='button-quote']")
-    WebElement buttonGetQuotesFoeShipEst;
-
-    @FindBy(xpath = "//input[@id='input-coupon']")
-    WebElement textCouponCode;
-
-    @FindBy(xpath = "//button[normalize-space()='Remove']")
-    WebElement buttonRemoveCoupon;
-
-    @FindBy(xpath = "//button[normalize-space()='Apply Coupon']")
-    WebElement buttonApplyCoupon;
-
-    @FindBy(xpath = "//a[normalize-space()='Continue Shopping']")
-    WebElement buttonContinueShipping;
-
-    @FindBy(xpath = "//a[text()='Checkout']")
-    WebElement buttonCheckout;
-
-    @FindBy(xpath = "//button[normalize-space()='Use Coupon Code']")
-    WebElement buttonExpandUseCouponCode;
-
+    private final By labelShoppingCart  = By.xpath("//h1[normalize-space()='Shopping Cart']");
+    private final By labelShoppingCartEmpty  = By.xpath("//div[@id='checkout-cart']//p");
+    private final By buttonContinueHomeProductSearch  = By.xpath("//a[normalize-space()='Continue']");
+    private final By LabelShoppingCartWeight  = By.xpath("//h1");
+    private final By imgProductCart  = By.xpath("//table//tr[1]//td[1]//img");
+    private final By labelProductInCart  = By.xpath("//table//tr[1]//td[2]");
+    private final By txtQuantityCartProd  = By.xpath("//input[@name='quantity']");
+    private final By buttonUpdateShoppingCart  = By.xpath("//button[@title='Update']");
+    private final By  buttonRemoveProductFromCart = By.xpath("//a[@title='Remove']");
+    private final By labelUnitPriceProduct  = By.xpath("(//tbody//tr[1]//td[4])[2]");
+    private final By labelProductPriceByQuantity  = By.xpath("(//tbody//tr[1]//td[5])[1]");
+    private final By labelSubTotal  = By.xpath("(//tfoot[@id='checkout-total']//td[@class='text-end'])[2]");
+    private final By labelEcoTax  = By.xpath("(//tfoot[@id='checkout-total']//td[@class='text-end'])[4]");
+    private final By labelVatPrice  = By.xpath("(//tfoot[@id='checkout-total']//td[@class='text-end'])[6]");
+    private final By labelTotalofAllPrice  = By.xpath("(//tfoot[@id='checkout-total']//td[@class='text-end'])[8]");
+    private final By labelNextOperations  = By.xpath("//h2[normalize-space()='What would you like to do next?']");
+    private final By labelInstructionsCodeReward  = By.xpath("//p[contains(text(),'Choose if you have a discount code or reward point')]");
+    private final By buttonExpandEstimateShipping  = By.xpath("//button[normalize-space()='Estimate Shipping & Taxes']");
+    private final By selectDrpdwnCountryShippingEst  = By.xpath("//select[@id='input-country']");
+    private final By selectDrpdwnStateShippingEst  = By.xpath("//select[@id='input-zone']");
+    private final By textPostCodeShippingEst  = By.xpath("//input[@id='input-postcode']");
+    private final By buttonGetQuotesFoeShipEst  = By.xpath("//button[@id='button-quote']");
+    private final By textCouponCode  = By.xpath("//input[@id='input-coupon']");
+    private final By buttonRemoveCoupon  = By.xpath("//button[normalize-space()='Remove']");
+    private final By buttonApplyCoupon  = By.xpath("//button[normalize-space()='Apply Coupon']");
+    private final By buttonContinueShipping  = By.xpath("//a[normalize-space()='Continue Shopping']");
+    private final By buttonCheckout  = By.xpath("//a[text()='Checkout']");
+    private final By buttonExpandUseCouponCode  = By.xpath("//button[normalize-space()='Use Coupon Code']");
 
 
     public boolean isShoppingCartPageDisplayed(){
-        return labelShoppingCart.isDisplayed();
+        return actions.isDisplayed(labelShoppingCart);
     }
 
-    public String getBreadcrumbText(){
-        return breadcrumb.getText();
+
+    public String isCartEmptyMessage(){
+        return actions.getText(labelShoppingCartEmpty);
     }
 
-    public String getEmptyCartMessage(){
-        return labelShoppingCartEmpty.getText();
-    }
+    public void getCartProductName(){
+        String productInCart = actions.getText(labelProductInCart);
+        String unitPrice = actions.getText(labelUnitPriceProduct);
+        String productPriceByqnt = actions.getText(labelProductPriceByQuantity);
+        String subTotal = actions.getText(labelSubTotal);
+        String ecotax = actions.getText(labelEcoTax);
+        String vatTax = actions.getText(labelVatPrice);
+        String totalPrice = actions.getText(labelTotalofAllPrice);
 
-    public String getCartProductName(){
-        return labelProductInCart.getText();
-    }
-
-    public String getUnitPrice(){
-        return labelUnitPriceProduct.getText();
-    }
-
-    public String getPriceByQuantity(){
-        return labelProductPriceByQuantity.getText();
-    }
-
-    public String getSubTotal(){
-        return labelSubTotal.getText();
-    }
-
-    public String getEcoTax(){
-        return LabelEcoTax.getText();
-    }
-
-    public String getVatPrice(){
-        return labelVatPrice.getText();
-    }
-
-    public String getTotalPrice(){
-        return labelTotalofAllPrice.getText();
-    }
-
-    public void enterProductQuantity(String quantity){
-        txtQuantityCartProd.clear();
-        txtQuantityCartProd.sendKeys(quantity);
-    }
-
-    public void clickUpdateCart(){
-        buttonUpdateShoppingCart.click();
     }
 
     public void updateProductQuantity(String quantity){
-        enterProductQuantity(quantity);
-        clickUpdateCart();
+        actions.type(txtQuantityCartProd, quantity);
+        actions.click(buttonUpdateShoppingCart);
+
     }
+
 
     public void removeProductFromCart(){
-        buttonRemoveProductFromCart.click();
+        actions.click(buttonRemoveProductFromCart);
     }
 
-    public void clickContinueButton(){
-        buttonContinueHomeProductSearch.click();
+    public void redirectHomepage(){
+        actions.click(buttonContinueHomeProductSearch);
     }
 
     public void clickContinueShopping(){
-        buttonContinueShipping.click();
+        actions.click(buttonContinueShipping);
     }
 
-    public void clickCheckout(){
-        buttonCheckout.click();
+    public void Checkout(){
+        actions.click(buttonCheckout);
     }
 
     public void expandEstimateShipping(){
-        buttonExpandEstimateShipping.click();
+        actions.click(buttonExpandEstimateShipping);
     }
 
     public void selectCountry(String country){
-        Select select = new Select(selectDrpdwnCountryShippingEst);
-        select.selectByVisibleText(country);
+        actions.selectByVisibleText(selectDrpdwnCountryShippingEst, country);
     }
 
     public void selectState(String state){
-        Select select = new Select(selectDrpdwnStateShippingEst);
-        select.selectByVisibleText(state);
+        actions.selectByVisibleText(selectDrpdwnStateShippingEst, state);
     }
 
     public void enterPostCode(String postCode){
-        textPostCodeShippingEst.clear();
-        textPostCodeShippingEst.sendKeys(postCode);
+        actions.type(textPostCodeShippingEst, postCode);
     }
 
     public void clickGetQuotes(){
-        buttonGetQuotesFoeShipEst.click();
+        actions.click(buttonGetQuotesFoeShipEst);
     }
 
     public void estimateShipping(
@@ -208,27 +115,15 @@ public class ShoppingCartPage extends BasePage {
     }
 
 
-    public void expandCouponSection(){
-        buttonExpandUseCouponCode.click();
-    }
-
-    public void enterCouponCode(String coupon){
-        textCouponCode.clear();
-        textCouponCode.sendKeys(coupon);
-    }
-
-    public void clickApplyCoupon(){
-        buttonApplyCoupon.click();
-    }
-
     public void applyCoupon(String coupon){
-        expandCouponSection();
-        enterCouponCode(coupon);
-        clickApplyCoupon();
+        actions.click(buttonExpandUseCouponCode);
+        actions.type(textCouponCode, coupon);
+        actions.click(buttonApplyCoupon);
+
     }
 
     public void removeCoupon(){
-        buttonRemoveCoupon.click();
+        actions.click(buttonRemoveCoupon);
     }
 
 
