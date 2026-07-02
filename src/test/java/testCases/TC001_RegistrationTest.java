@@ -1,5 +1,6 @@
 package testCases;
 
+import Base.BaseTest;
 import PageObjects.AccountRegistrationPage;
 import PageObjects.AccountSuccessPage;
 import PageObjects.HomePage;
@@ -7,13 +8,17 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import utilities.RegistrationData;
+import utilities.TestDataExcelUtility;
+import utilities.TestDataGenerator;
 
-public class TC001_RegistrationTest {
+public class TC001_RegistrationTest extends BaseTest {
 
     private static final Logger logger = LogManager.getLogger(TC001_RegistrationTest.class);
 
     @Test(
-            priority = 2,
+            enabled = true,
+            priority = 1,
             description = "Verify user can register with valid details"
     )
     public void verifyUserRegistration() {
@@ -21,6 +26,7 @@ public class TC001_RegistrationTest {
         logger.info("********* Starting TC_001_RegistrationTest With Valid Credential *********");
 
         try {
+            RegistrationData user = TestDataGenerator.generateUser();
 
             HomePage homePage = new HomePage(driver);
 
@@ -33,23 +39,22 @@ public class TC001_RegistrationTest {
             AccountRegistrationPage registrationPage =
                     new AccountRegistrationPage(driver);
 
-            String email =
-                    "tushar" + System.currentTimeMillis() + "@gmail.com";
-
             AccountSuccessPage successPage = registrationPage.register(
-                    "Tushar",
-                    "Potdar",
-                    email,
-                    "Test@123",
+                    user.getFirstName(),
+                    user.getLastName(),
+                    user.getEmail(),
+                    user.getPassword(),
                     true
             );
 
             logger.info("Registration form submitted");
 
             Assert.assertTrue(
-                    successPage.isRegistrationSuccessful(),
+                    successPage.isAccountCreatedSuccessfully(),
                     "Registration was unsuccessful."
             );
+
+            TestDataExcelUtility.appendRegistrationData(user);
 
             logger.info("Registration completed successfully.");
 

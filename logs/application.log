@@ -117,3 +117,582 @@
 2026-07-02 14:04:57.020 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
 2026-07-02 14:04:57.021 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
 2026-07-02 14:04:57.302 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:09:42.505 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 15:09:42.841 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 15:09:44.034 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 15:09:46.040 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (262, 798)
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37d58b9ef4c290254322b141706cefff, clickElement {id=f.2EBC61EE1F56B37B719C13F319885D74.d.D4B9FC1C428D7608D6F53081044A3BA8.e.71}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55984}, goog:processID: 5832, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55984/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (37d58b9ef4c290254322b141706cefff)] -> xpath: //input[@type ='checkbox' and @id = 'input-newsletter']]
+Session ID: 37d58b9ef4c290254322b141706cefff
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.41.0.jar:?]
+	at Actions.ElementActions.click(ElementActions.java:34) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.subscribeNewsletter(AccountRegistrationPage.java:63) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.register(AccountRegistrationPage.java:87) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:42) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-07-02 15:09:46.080 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:09:48.284 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 15:09:48.552 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:09:49.101 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:09:49.546 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 15:09:50.133 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 15:09:50.133 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 15:09:50.136 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:09:52.351 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 15:09:52.634 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:09:53.845 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:09:54.524 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-07-02 15:09:55.088 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 15:09:55.088 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-07-02 15:09:55.091 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:10:00.295 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:10:00.708 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:10:02.240 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:10:03.252 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 15:10:03.253 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:10:04.063 [main] INFO  testCases.TC002_LoginTest - Login successful as expected.
+2026-07-02 15:10:04.064 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:10:04.067 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:10:06.904 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:10:07.186 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:10:07.919 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:10:09.615 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 15:10:09.616 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:10:30.017 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:10:30.017 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:10:30.019 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:10:32.294 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:10:32.803 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:10:33.408 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:10:33.841 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 15:10:33.841 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:10:53.935 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:10:53.936 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:10:53.938 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:10:56.147 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:10:56.390 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:10:57.036 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:10:57.895 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 15:10:57.899 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:11:18.055 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:11:18.056 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:11:18.057 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:12:47.239 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 15:12:47.762 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 15:12:48.590 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 15:12:50.530 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (262, 798)
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4dc7a20ddbd0334db9e97505c47dcba, clickElement {id=f.2B22BD011D28DFDFFAD71BC4E0D4801C.d.8FC0BFE2834C27B46B5E4C085B272C58.e.68}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56499}, goog:processID: 22364, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56499/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b4dc7a20ddbd0334db9e97505c47dcba)] -> xpath: //input[@type ='checkbox' and @id = 'input-newsletter']]
+Session ID: b4dc7a20ddbd0334db9e97505c47dcba
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.41.0.jar:?]
+	at Actions.ElementActions.click(ElementActions.java:34) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.subscribeNewsletter(AccountRegistrationPage.java:63) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.register(AccountRegistrationPage.java:87) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:42) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-07-02 15:12:50.549 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:12:52.353 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 15:12:52.526 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:12:53.014 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:12:53.606 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 15:12:54.163 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 15:12:54.163 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 15:12:54.164 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:12:56.065 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 15:12:56.349 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:12:56.815 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:12:57.293 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-07-02 15:12:57.854 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 15:12:57.854 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-07-02 15:12:57.855 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:13:01.046 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:13:01.276 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:13:01.749 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:13:02.206 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 15:13:02.207 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:13:02.790 [main] INFO  testCases.TC002_LoginTest - Login successful as expected.
+2026-07-02 15:13:02.790 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:13:02.792 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:13:04.601 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:13:05.092 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:13:05.546 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:13:05.973 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 15:13:05.973 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:13:26.378 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:13:26.378 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:13:26.379 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:13:28.333 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:13:28.584 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:13:28.980 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:13:29.401 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 15:13:29.401 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:13:49.539 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:13:49.540 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:13:49.541 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:13:51.575 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 15:13:51.887 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:13:52.320 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:13:52.738 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 15:13:52.739 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 15:14:13.031 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 15:14:13.032 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 15:14:13.034 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:46:32.380 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 15:46:52.898 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element found by By.xpath: //span[normalize-space()='My Account'] to be clickable, but the element null.
+(tried for 20 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233) ~[selenium-support-4.41.0.jar:?]
+	at Actions.ElementActions.click(ElementActions.java:34) ~[classes/:?]
+	at Components.HeaderComponent.clickMyAccount(HeaderComponent.java:42) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:33) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0a0ed60dfab684221eb4e8024576025f, findElement {using=xpath, value=//span[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50439}, goog:processID: 20680, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50439/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0a0ed60dfab684221eb4e8024576025f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:756) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:749) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209) ~[selenium-support-4.41.0.jar:?]
+	... 34 more
+2026-07-02 15:46:52.933 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:46:57.030 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 15:46:57.256 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:46:57.629 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:46:58.217 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 15:46:58.791 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 15:46:58.791 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 15:46:58.792 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 15:47:00.936 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 15:47:01.089 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 15:47:01.564 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 15:48:31.225 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 15:48:31.541 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 15:48:31.978 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 15:48:33.764 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (262, 798)
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31dc236251766f8ff1903e0bd54ccddc, clickElement {id=f.F605C8C73150DAEFFADD080C588B786E.d.4C6466DEC842624D0A169E302AFB9ADF.e.66}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49683}, goog:processID: 21640, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49683/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (31dc236251766f8ff1903e0bd54ccddc)] -> xpath: //input[@type ='checkbox' and @id = 'input-newsletter']]
+Session ID: 31dc236251766f8ff1903e0bd54ccddc
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76) ~[selenium-remote-driver-4.41.0.jar:?]
+	at Actions.ElementActions.click(ElementActions.java:34) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.subscribeNewsletter(AccountRegistrationPage.java:63) ~[classes/:?]
+	at PageObjects.AccountRegistrationPage.register(AccountRegistrationPage.java:87) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:42) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-07-02 15:48:33.781 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 16:03:54.443 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 16:03:54.760 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 16:03:55.258 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 16:03:56.290 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 16:03:58.084 [main] INFO  testCases.TC001_RegistrationTest - Registration completed successfully.
+2026-07-02 16:03:58.085 [main] INFO  testCases.TC001_RegistrationTest - ********** Registration Test Finished **********
+2026-07-02 16:03:58.095 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 16:04:05.538 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 16:04:05.890 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 16:04:06.376 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 16:04:07.452 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 16:04:24.394 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eff1620d3c799cb5370a43459213060c, findElement {using=xpath, value=//h1[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60006}, goog:processID: 13508, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60006/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eff1620d3c799cb5370a43459213060c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:222) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:215) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209) ~[selenium-support-4.41.0.jar:?]
+	at Actions.ElementActions.find(ElementActions.java:26) ~[classes/:?]
+	at Actions.ElementActions.isDisplayed(ElementActions.java:52) ~[classes/:?]
+	at PageObjects.AccountSuccessPage.isPageHeadingDisplayed(AccountSuccessPage.java:32) ~[classes/:?]
+	at PageObjects.AccountSuccessPage.isAccountCreatedSuccessfully(AccountSuccessPage.java:64) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:53) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65) [testng-rt.jar:?]
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105) [testng-rt.jar:?]
+2026-07-02 16:04:24.424 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 16:11:14.898 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 16:11:15.317 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 16:11:15.742 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 16:11:16.912 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 16:11:26.181 [main] ERROR testCases.TC001_RegistrationTest - Registration test failed
+org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=150.0.7871.47)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03dfe93986130f26c072275a6831afa9, findElement {value=//h1[normalize-space()='Your Account Has Been Created!'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.47, chrome: {chromedriverVersion: 150.0.7871.46 (5b586c06e0d2..., userDataDir: C:\Users\Tushar\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57458}, goog:processID: 21496, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57458/devtoo..., se:cdpVersion: 150.0.7871.47, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 03dfe93986130f26c072275a6831afa9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421) ~[selenium-remote-driver-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:222) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:215) ~[selenium-support-4.41.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209) ~[selenium-support-4.41.0.jar:?]
+	at Actions.ElementActions.find(ElementActions.java:26) ~[classes/:?]
+	at Actions.ElementActions.isDisplayed(ElementActions.java:52) ~[classes/:?]
+	at PageObjects.AccountSuccessPage.isPageHeadingDisplayed(AccountSuccessPage.java:32) ~[classes/:?]
+	at PageObjects.AccountSuccessPage.isAccountCreatedSuccessfully(AccountSuccessPage.java:64) ~[classes/:?]
+	at testCases.TC001_RegistrationTest.verifyUserRegistration(TC001_RegistrationTest.java:53) [test-classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) [testng-7.12.0.jar:7.12.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) [testng-7.12.0.jar:7.12.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:744) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.12.0.jar:7.12.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.12.0.jar:7.12.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.12.0.jar:7.12.0]
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137) [surefire-testng-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) [surefire-booter-3.2.5.jar:3.2.5]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) [surefire-booter-3.2.5.jar:3.2.5]
+2026-07-02 16:11:26.218 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 16:13:09.002 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 16:13:09.956 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 16:13:10.491 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 16:13:11.554 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 16:13:12.566 [main] INFO  testCases.TC001_RegistrationTest - Registration completed successfully.
+2026-07-02 16:13:12.566 [main] INFO  testCases.TC001_RegistrationTest - ********** Registration Test Finished **********
+2026-07-02 16:13:12.571 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:09.392 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 18:01:11.602 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 18:01:13.260 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 18:01:14.729 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 18:01:16.098 [main] INFO  testCases.TC001_RegistrationTest - Registration completed successfully.
+2026-07-02 18:01:16.099 [main] INFO  testCases.TC001_RegistrationTest - ********** Registration Test Finished **********
+2026-07-02 18:01:16.106 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:18.951 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 18:01:19.161 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:19.876 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:20.502 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 18:01:21.241 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 18:01:21.241 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 18:01:21.244 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:23.393 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 18:01:23.744 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:24.387 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:24.821 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-07-02 18:01:25.411 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 18:01:25.412 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-07-02 18:01:25.416 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:27.576 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:01:27.814 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:28.328 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:28.808 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 18:01:28.808 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:01:29.763 [main] INFO  testCases.TC002_LoginTest - Login successful as expected.
+2026-07-02 18:01:29.763 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 18:01:29.767 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:32.004 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:01:32.234 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:32.843 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:33.400 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 18:01:33.400 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:01:33.449 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:35.706 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:01:36.016 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:36.601 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:37.157 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 18:01:37.157 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:01:37.180 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:01:39.465 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:01:39.693 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:01:40.630 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:01:41.157 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 18:01:41.158 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:01:41.177 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:06:51.100 [main] INFO  testCases.TC001_RegistrationTest - ********* Starting TC_001_RegistrationTest With Valid Credential *********
+2026-07-02 18:06:52.884 [main] INFO  testCases.TC001_RegistrationTest - Clicked My Account
+2026-07-02 18:06:53.646 [main] INFO  testCases.TC001_RegistrationTest - Clicked Register
+2026-07-02 18:06:56.051 [main] INFO  testCases.TC001_RegistrationTest - Registration form submitted
+2026-07-02 18:06:57.519 [main] INFO  testCases.TC001_RegistrationTest - Registration completed successfully.
+2026-07-02 18:06:57.519 [main] INFO  testCases.TC001_RegistrationTest - ********** Registration Test Finished **********
+2026-07-02 18:06:57.527 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:06:59.933 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Valid Credential *********
+2026-07-02 18:07:00.374 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:01.041 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:01.596 [main] INFO  testCases.TC002_LoginTest - Passed Username and Password and Clicked Login
+2026-07-02 18:07:02.341 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 18:07:02.342 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest With Valid Credential  *********
+2026-07-02 18:07:02.344 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:07:04.488 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest with Invalid credentials *********
+2026-07-02 18:07:04.716 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:05.343 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:05.984 [main] INFO  testCases.TC002_LoginTest - Passed Invalid Username and Password and Clicked Login
+2026-07-02 18:07:06.561 [main] INFO  testCases.TC002_LoginTest - TEST PASSED
+2026-07-02 18:07:06.562 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_002_LoginTest with invalid credentials*********
+2026-07-02 18:07:06.566 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:07:08.702 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:07:08.927 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:09.591 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:10.106 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 18:07:10.107 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:07:10.880 [main] INFO  testCases.TC002_LoginTest - Login successful as expected.
+2026-07-02 18:07:10.881 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 18:07:10.883 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:07:13.045 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:07:13.448 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:14.199 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:14.717 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar99@gmail.com
+2026-07-02 18:07:14.718 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:07:15.302 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 18:07:15.302 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 18:07:15.306 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:07:17.240 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:07:17.633 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:18.256 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:18.724 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 18:07:18.725 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:07:19.296 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 18:07:19.297 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 18:07:19.298 [main] INFO  Driver.DriverFactory - Closing Browser
+2026-07-02 18:07:21.099 [main] INFO  testCases.TC002_LoginTest - ********* Starting TC_002_LoginTest With Test Data *********
+2026-07-02 18:07:21.501 [main] INFO  testCases.TC002_LoginTest - Click my account
+2026-07-02 18:07:22.327 [main] INFO  testCases.TC002_LoginTest - Click login
+2026-07-02 18:07:22.762 [main] INFO  testCases.TC002_LoginTest - Entered Username: tusharpotdar@gmail.com
+2026-07-02 18:07:22.763 [main] INFO  testCases.TC002_LoginTest - Clicked Login button
+2026-07-02 18:07:23.355 [main] INFO  testCases.TC002_LoginTest - Invalid login verified successfully.
+2026-07-02 18:07:23.356 [main] INFO  testCases.TC002_LoginTest - ********* Finished TC_003_LoginTest_DDT *********
+2026-07-02 18:07:23.358 [main] INFO  Driver.DriverFactory - Closing Browser

@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.WaitUtility;
+
 import java.util.List;
 
 public class AccountRegistrationPage extends BasePage {
@@ -58,6 +60,9 @@ public class AccountRegistrationPage extends BasePage {
     }
 
     public void subscribeNewsletter() {
+        WaitUtility.scrollIntoView(driver, newsletterCheckbox);
+
+        WaitUtility.waitForElementToBeClickable(driver, newsletterCheckbox);
 
         if (!actions.isSelected(newsletterCheckbox)) {
             actions.click(newsletterCheckbox);

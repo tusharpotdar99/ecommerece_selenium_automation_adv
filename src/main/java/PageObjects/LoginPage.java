@@ -31,52 +31,21 @@ public class LoginPage extends BasePage {
     private final By warningMessage = By.xpath("//div[contains(@class,'alert-danger')]");
 
 
-    public MyAccountPage login(String email, String password){
+    public void login(String email, String password){
 
         actions.type(emailTextBox, email);
         actions.type(passwordTextBox, password);
         actions.click(loginButton);
-
-        return new MyAccountPage(driver);
-
     }
 
-    public MyAccountPage qalogin(String email, String password){
+    public void qalogin(String email, String password){
 
         actions.type(emailTextBox, email);
         actions.type(passwordTextBox, password);
         actions.click(qaloginButton);
 
-        return new MyAccountPage(driver);
-
     }
 
-
-    public LoginPage loginWithInvalidCredentials(
-            String email,
-            String password) {
-
-        actions.type(emailTextBox, email);
-
-        actions.type(passwordTextBox, password);
-
-        actions.click(loginButton);
-
-        return this;
-    }
-
-    public LoginPage qaloginWithInvalidCredentials(
-            String email,
-            String password) {
-
-        actions.type(emailTextBox, email);
-
-        actions.type(passwordTextBox, password);
-
-        actions.click(qaloginButton);
-
-        return this;
-    }
 
     public AccountSidePanelComponent sidePanel(){
         return sidePanel;
@@ -88,11 +57,14 @@ public class LoginPage extends BasePage {
     }
 
     public AccountRegistrationPage clickContinue() {
-
         actions.click(btnContinue);
-
         return new AccountRegistrationPage(driver);
     }
+
+    public boolean isLoginFailed() {
+        return actions.isDisplayed(warningMessage);
+    }
+
 
 
 //    public ForgotPasswordPage clickForgotPassword() {

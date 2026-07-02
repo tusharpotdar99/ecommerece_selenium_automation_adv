@@ -1,11 +1,9 @@
 package testCases;
 
-import Base.BasePage;
 import Base.BaseTest;
 import DataProviders.LoginDataProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import PageObjects.HomePage;
@@ -30,9 +28,9 @@ public class TC002_LoginTest extends BaseTest {
             logger.info("Click login");
 
             LoginPage loginPage = new LoginPage(driver);
-            MyAccountPage myAccountPage = loginPage.login(ConfigReader.getUsername(),ConfigReader.getPassword());
+            loginPage.login(ConfigReader.getUsername(),ConfigReader.getPassword());
             logger.info("Passed Username and Password and Clicked Login");
-
+            MyAccountPage myAccountPage = new MyAccountPage(driver);
             Assert.assertTrue(myAccountPage.IsMyAccountPageExists());
             logger.info("TEST PASSED");
 
@@ -60,12 +58,10 @@ public class TC002_LoginTest extends BaseTest {
 
 
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.loginWithInvalidCredentials(
+            loginPage.login(
                     ConfigReader.getInvalidUser(),
                     ConfigReader.getInvalidPassword());
             logger.info("Passed Invalid Username and Password and Clicked Login");
-
-
             Assert.assertTrue(
                     loginPage.getWarningMessage()
                             .contains("Warning"));
@@ -92,15 +88,14 @@ public class TC002_LoginTest extends BaseTest {
             logger.info("Click login");
 
             LoginPage loginPage = new LoginPage(driver);
-            MyAccountPage myAccountPage = loginPage.login(username, password);
+            loginPage.login(username, password);
             logger.info("Entered Username: {}", username);
             logger.info("Clicked Login button");
 
-            boolean isLoginSuccessful = myAccountPage.IsMyAccountPageExists();
-
             if (expectedResult.equalsIgnoreCase("Valid")) {
 
-                Assert.assertTrue(isLoginSuccessful,
+                MyAccountPage myAccountPage = new MyAccountPage(driver);
+                Assert.assertTrue(myAccountPage.IsMyAccountPageExists(),
                         "Expected login to be successful.");
 
                 logger.info("Login successful as expected.");
@@ -109,8 +104,13 @@ public class TC002_LoginTest extends BaseTest {
 
             } else {
 
-                Assert.assertFalse(isLoginSuccessful,
-                        "Expected login to fail.");
+//                Assert.assertTrue(loginPage.isLoginFailed(),
+//                        "Expected login to fail.");
+
+                Assert.assertTrue(
+                        loginPage.getWarningMessage().contains("Warning"),
+                        "Incorrect warning message displayed."
+                );
 
                 logger.info("Invalid login verified successfully.");
             }

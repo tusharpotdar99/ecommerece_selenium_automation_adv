@@ -1,16 +1,16 @@
 package utilities;
 
-public class TestUser {
+public class RegistrationData {
 
     private final String firstName;
     private final String lastName;
     private final String email;
     private final String password;
 
-    public TestUser(String firstName,
-                    String lastName,
-                    String email,
-                    String password) {
+    public RegistrationData(String firstName,
+                            String lastName,
+                            String email,
+                            String password) {
 
         this.firstName = firstName;
         this.lastName = lastName;

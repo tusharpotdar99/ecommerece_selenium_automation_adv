@@ -22,69 +22,77 @@ public class ElementActions {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT));
     }
 
-    private WebElement find(By locator){
+    private WebElement waitForVisibility(By locator){
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    private List<WebElement> findAll(By locator){
+    private List<WebElement> waitForAllVisible(By locator){
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }
 
+    //actions methods
     public void click(By locator){
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
     public void type(By locator, String text){
-        WebElement element = find(locator);
+        WebElement element = waitForVisibility(locator);
         element.clear();
         element.sendKeys(text);
     }
 
-    public void clear(By locator){
-        find(locator).clear();
-    }
-
     public String getText(By locator){
-        return find(locator).getText().trim();
+        return waitForVisibility(locator).getText().trim();
     }
 
+
+
+    //verification methods
     public boolean isDisplayed(By locator){
-        return find(locator).isDisplayed();
+        return waitForVisibility(locator).isDisplayed();
     }
 
     public boolean isEnabled(By locator){
-        return find(locator).isEnabled();
+        return waitForVisibility(locator).isEnabled();
     }
 
     public boolean isSelected(By locator){
-        return find(locator).isSelected();
+        return waitForVisibility(locator).isSelected();
     }
-
     public String getAttribute(By locator, String attribute){
-        return find(locator).getAttribute(attribute);
+        return waitForVisibility(locator).getAttribute(attribute);
     }
 
     public int getElementCount(By locator){
-        return findAll(locator).size();
+        return waitForAllVisible(locator).size();
     }
 
     public List<WebElement> getElements(By locator) {
-        return findAll(locator);
+        return waitForAllVisible(locator);
     }
 
     public void selectByVisibleText(By locator, String text) {
-        Select select = new Select(find(locator));
+        Select select = new Select(waitForVisibility(locator));
         select.selectByVisibleText(text);
     }
 
     public void selectByValue(By locator, String value) {
-        Select select = new Select(find(locator));
+        Select select = new Select(waitForVisibility(locator));
         select.selectByValue(value);
     }
 
     public void selectByIndex(By locator, int index) {
-        Select select = new Select(find(locator));
+        Select select = new Select(waitForVisibility(locator));
         select.selectByIndex(index);
+    }
+
+
+    private List<WebElement> findImmediately(By locator) {
+        return driver.findElements(locator);
+    }
+
+    public boolean isPresent(By locator) {
+        return !findImmediately(locator).isEmpty();
     }
 
 
