@@ -17,6 +17,7 @@ public class TC001_RegistrationTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(TC001_RegistrationTest.class);
 
     @Test(
+            invocationCount = 1,
             enabled = true,
             priority = 1,
             description = "Verify user can register with valid details"

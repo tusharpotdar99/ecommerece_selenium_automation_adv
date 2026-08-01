@@ -5,18 +5,21 @@ import DataProviders.LoginDataProvider;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import PageObjects.HomePage;
 import PageObjects.LoginPage;
 import PageObjects.MyAccountPage;
 import utilities.ConfigReader;
+import utilities.ExtentReportListener;
 
 
+@Listeners(ExtentReportListener.class)
 public class TC002_LoginTest extends BaseTest {
 
     private static final Logger logger = LogManager.getLogger(TC002_LoginTest.class);
 
-    @Test(priority = 1, enabled = true, description = "verify user can login with valid credentials.")
+    @Test(priority = 2, enabled = true, description = "verify user can login with valid credentials.")
     public void verifyValidLogin(){
         logger.info("********* Starting TC_002_LoginTest With Valid Credential *********");
 
@@ -41,7 +44,7 @@ public class TC002_LoginTest extends BaseTest {
         logger.info("********* Finished TC_002_LoginTest With Valid Credential  *********");
     }
 
-    @Test(priority = 2, enabled = true, description = "Verify warning message for invalid credentials")
+    @Test(priority = 3, enabled = true, description = "Verify warning message for invalid credentials")
     public void verifyInvalidLogin(){
         logger.info("********* Starting TC_002_LoginTest with Invalid credentials *********");
 
@@ -70,7 +73,7 @@ public class TC002_LoginTest extends BaseTest {
         logger.info("********* Finished TC_002_LoginTest with invalid credentials*********");
     }
 
-    @Test(priority = 3, enabled = true, description = "verify user can login with data-driven testing", dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
+    @Test(priority = 4, enabled = true, description = "verify user can login with data-driven testing", dataProvider = "LoginData", dataProviderClass = LoginDataProvider.class)
     public void verifyLoginDDT(String username, String password, String expectedResult){
         logger.info("********* Starting TC_002_LoginTest With Test Data *********");
 
